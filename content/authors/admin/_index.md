@@ -1,13 +1,13 @@
 ---
 # Display name
-title: 吳健雄
+title: Boris Sedlak
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Boris Sedlak
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Boris
+last_name: Sedlak
 
 # Status emoji
 status:
@@ -20,60 +20,40 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: Pre-Doc Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenAI
-    url: https://openai.com/
+  - name: TU Wien
+    url: https://dsg.tuwien.ac.at/team/bsedlak/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: at-symbol
-    url: 'mailto:your-email@example.com'
-    label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
-  - icon: brands/github
-    url: https://github.com/gcushen
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
+    url: https://scholar.google.com/citations?user=m0yHSA4AAAAJ&hl=en
   - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://orcid.org/0009-0001-2365-8265
+  - icon: brands/github
+    url: https://github.com/borissedlak
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/boris-sedlak/
+  # - icon: spotify
+  #   url: https://github.com/gcushen
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Computing continuum systems
+  - Bayesian or Causal inference
+  - Video stream processing
+  - Runtime requirements
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
+  - area: PhD Computer Science (Ongoing)
+    institution: TU Wien, Austria
+  - area: MSc Software Engineering
+    institution: TU Wien, Austria
+  - area: BSc Media Informatics
+    institution: FH St. Poelten, Austria
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |
@@ -142,12 +122,14 @@ skills:
         icon: camera
 
 languages:
-  - name: English
+  - name: German
     percent: 100
-  - name: Chinese
+  - name: English
+    percent: 90
+  - name: Spanish
     percent: 75
   - name: Portuguese
-    percent: 25
+    percent: 50
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -183,4 +165,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Boris Sedlak is a Ph.D. student in the Distributed Systems Group at TU Wien, Austria. He received his B.Sc. in Media Informatics at the University of Applied Sciences in St. Pölten and his M.Sc. in Software Engineering & Internet Computing at the TU Wien. He worked for four years as a software engineer before starting to work on Teadal, a European project on federated and trustworthy data lakes.
