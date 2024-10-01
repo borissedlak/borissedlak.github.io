@@ -34,6 +34,8 @@ profiles:
     url: https://scholar.google.com/citations?user=m0yHSA4AAAAJ&hl=en
   - icon: academicons/orcid
     url: https://orcid.org/0009-0001-2365-8265
+  - icon: academicons/researchgate
+    url: https://www.researchgate.net/profile/Boris-Sedlak-2
   - icon: brands/github
     url: https://github.com/borissedlak
   - icon: brands/linkedin
