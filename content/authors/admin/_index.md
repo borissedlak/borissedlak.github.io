@@ -11,7 +11,7 @@ last_name: Sedlak
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 🧉
 
 # Is this the primary user of the site?
 superuser: true
@@ -45,93 +45,111 @@ profiles:
 
 interests:
   - Computing continuum systems
-  - Bayesian or Causal inference
+  - Bayesian or causal inference
   - Video stream processing
   - Runtime requirements
 
 education:
   - area: PhD Computer Science (Ongoing)
     institution: TU Wien, Austria
+    date_start: 2022-09-01
+    date_end: 
+    summary: |
+      Working under Prof. [Schahram Dustdar](https://dsg.tuwien.ac.at/team/sd/) at the Distributed Systems Group ([DSG](https://dsg.tuwien.ac.at/)); focusing on ensuring runtime requirements in large-scale computing systems through causal inference. Fully funded by EU Horizon ([Teadal](https://www.teadal.eu/)).
+
+      Research visit at Tsinghua University under Prof. [Xiaobo Qu](https://sites.google.com/site/profxiaoboqu/); working on emerging transportation solutions for collaborative offloading in vehicular edge computing.
+
   - area: MSc Software Engineering
     institution: TU Wien, Austria
+    date_start: 2018-09-01
+    date_end: 2022-05-01
+    summary: |
+      Focusing on advanced software engineering, algorithms, data structures, and distributed information systems. Finished the studies and master defense with distinction. Working in parallel as software engineer at Austrian lotteries.
+
+      GPA: 3.7/4.0
+
   - area: BSc Media Informatics
     institution: FH St. Poelten, Austria
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2015-09-01
+    date_end: 2018-08-31
     summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      Focused on tangible software products and HCI; developing dynamic solutions for mobile navigation; interactive installations for digital art (e.g., music and video); experimenting with AR and VR environments
+
+      GPA: 3.5/4.0
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
-    company_logo: ''
-    date_start: 2021-01-01
-    date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - position: Agile Software Engineer
+    company_name: Austrian Lotteries
+    # company_url: 'https://www.lotterien.at/en'
+    # company_logo: 'lotteries_logo.jpeg'
+    date_start: 2018-02-01
+    date_end: 2022-08-01
     summary: |
       Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Development and maintainance of request processing engines
+      - Ensuring excellent software quality throughout releases 
+      - Working and organizing work packages in agile teams
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
-  - name: Technical Skills
+  - name: Sports
     items:
-      - name: Python
-        description: ''
-        percent: 80
-        icon: code-bracket
-      - name: Data Science
-        description: ''
-        percent: 100
-        icon: chart-bar
-      - name: SQL
-        description: ''
-        percent: 40
-        icon: circle-stack
-  - name: Hobbies
+      - name: Climbing
+        # description: 'Bouldering and rope climbing, mostly indoor'
+        # icon: mountain
+      - name: Swimming
+        # description: 'Hope to do a triathlon some day...'
+        # icon: chart-bar
+      - name: Football
+        # description: ''
+        # icon: circle-stack
+  - name: Music
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
+      - name: Bossa Nova
+        # description: 'Was hoping to '
+        # icon: person-simple-walk
+      - name: Drum & Bass
         description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
+        # icon: cat
+      - name: Intl. Rap
         description: ''
-        percent: 100
-        icon: cat
-      - name: Photography
+        # icon: camera
+  - name: Cooking
+    color: '#eeac02'
+    color_border: '#f0bf23'
+    items:
+      - name: Adriatic
         description: ''
-        percent: 80
-        icon: camera
+        # icon: person-simple-walk
+      - name: Indian
+        description: ''
+        # icon: cat
+      - name: Vegetarian
+        description: ''
+        # icon: camera
+  - name: Languages
+    items:
+      - name: Spanish
+        description: ''
+        # icon: spain
+      - name: Portuguese
+        description: ''
+        # icon: cat
+      - name: French
+        description: ''
+        # icon: camera
 
-languages:
-  - name: German
-    percent: 100
-  - name: English
-    percent: 90
-  - name: Spanish
-    percent: 75
-  - name: Portuguese
-    percent: 50
+# languages:
+#   - name: German
+#     percent: 100
+#   - name: English
+#     percent: 90
+#   - name: Spanish
+#     percent: 75
+#   - name: Portuguese
+#     percent: 50
 
 # Awards.
 #   Add/remove as many awards below as you like.

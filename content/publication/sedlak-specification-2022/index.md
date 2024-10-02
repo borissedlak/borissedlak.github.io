@@ -13,4 +13,5 @@ doi: 10.1109/ICFEC54809.2022.00018
 links:
 - name: URL
   url: https://ieeexplore.ieee.org/document/9799184/
+url_slides: 'uploads/slides_icfec_specification.pdf'
 ---

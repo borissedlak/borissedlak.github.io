@@ -36,5 +36,5 @@ abstract: Die wachsende Anzahl an Internet of Things (IoT)-Geräten erzeugt eine
   Zukünftige Forschungsarbeit muss sich jedoch der Unterstützung von weiteren Datentypen
   widmen, um die allgemeine Eignung des Systems zu verdeutlichen.
   
-url_slides: 'uploads/Paper_PrivacyModel.pptx.pdf'
+url_slides: 'uploads/slides_thesis.pdf'
 ---
