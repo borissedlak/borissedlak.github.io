@@ -1,5 +1,6 @@
 ---
 title: Towards Serverless Data Exchange Within Federations
+share: false
 authors:
 - Boris Sedlak
 - Victor Casamayor Pujol

@@ -1,5 +1,6 @@
 ---
 title: Specification and Operation of Privacy Models for Data Streams on the Edge
+share: false
 authors:
 - Boris Sedlak
 - Ilir Murturi

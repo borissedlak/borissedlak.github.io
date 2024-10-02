@@ -1,6 +1,7 @@
 ---
 title: 'Thesis: Specification and operation of privacy models for data streams on
   the edge'
+share: false
 authors:
 - Boris Sedlak
 date: '2022-01-01'

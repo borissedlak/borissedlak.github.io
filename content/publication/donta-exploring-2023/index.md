@@ -1,5 +1,6 @@
 ---
 title: Exploring the Potential of Distributed Computing Continuum Systems
+share: false
 authors:
 - Praveen Kumar Donta
 - Ilir Murturi

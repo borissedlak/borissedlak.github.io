@@ -1,5 +1,6 @@
 ---
 title: On Causality in Distributed Continuum Systems
+share: false
 authors:
 - Víctor Casamayor Pujol
 - Boris Sedlak

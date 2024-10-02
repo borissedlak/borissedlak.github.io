@@ -1,5 +1,6 @@
 ---
 title: DeepSLOs for the Computing Continuum
+share: false
 authors:
 - Victor Casamayor Pujol
 - Boris Sedlak

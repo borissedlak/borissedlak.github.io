@@ -1,5 +1,6 @@
 ---
 title: Diffusing High-level SLO in Microservice Pipelines
+share: false
 authors:
 - Boris Sedlak
 - Víctor Casamayor Pujol

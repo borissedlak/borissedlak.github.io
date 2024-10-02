@@ -1,5 +1,6 @@
 ---
 title: Markov Blanket Composition of SLOs
+share: false
 authors:
 - Boris Sedlak
 - Victor Casamayor Pujol

@@ -1,6 +1,7 @@
 ---
 title: 'Governance and sustainability of distributed continuum systems: a big data
   approach'
+share: false
 authors:
 - Praveen Kumar Donta
 - Boris Sedlak

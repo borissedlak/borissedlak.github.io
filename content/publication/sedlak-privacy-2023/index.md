@@ -1,5 +1,6 @@
 ---
 title: A Privacy Enforcing Framework for Transforming Data Streams on the Edge
+share: false
 authors:
 - Boris Sedlak
 - Ilir Murturi

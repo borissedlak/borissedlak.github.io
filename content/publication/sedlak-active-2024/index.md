@@ -1,5 +1,6 @@
 ---
 title: 'Active Inference on the Edge: A Design Study'
+share: false
 authors:
 - Boris Sedlak
 - Victor Casamayor Pujol

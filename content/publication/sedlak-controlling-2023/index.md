@@ -1,6 +1,7 @@
 ---
 title: 'Controlling Data Gravity and Data Friction: From Metrics to Multidimensional
   Elasticity Strategies'
+share: false
 authors:
 - Boris Sedlak
 - Victor Casamayor Pujol

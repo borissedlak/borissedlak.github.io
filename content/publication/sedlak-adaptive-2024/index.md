@@ -1,5 +1,6 @@
 ---
 title: Adaptive Stream Processing on Edge Devices through Active Inference
+share: false
 authors:
 - Boris Sedlak
 - Victor Casamayor Pujol

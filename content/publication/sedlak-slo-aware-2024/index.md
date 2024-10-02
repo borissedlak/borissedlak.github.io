@@ -2,6 +2,7 @@
 title: SLO-Aware Task Offloading within Collaborative Vehicle Platoons
 featured: true
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+share: false
 
 authors:
 - Boris Sedlak

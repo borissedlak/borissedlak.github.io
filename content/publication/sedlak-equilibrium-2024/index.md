@@ -1,5 +1,6 @@
 ---
 title: Equilibrium in the Computing Continuum through Active Inference
+share: false
 authors:
 - Boris Sedlak
 - Victor Casamayor Pujol

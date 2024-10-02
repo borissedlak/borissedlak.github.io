@@ -1,5 +1,6 @@
 ---
 title: Designing Reconfigurable Intelligent Systems with Markov Blankets
+share: false
 authors:
 - Boris Sedlak
 - Victor Casamayor Pujol
