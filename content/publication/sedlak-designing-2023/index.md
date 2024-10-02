@@ -31,7 +31,7 @@ tags:
 - Markov Blankets
 - Sensory State
 
-featured: true
+featured: false
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 url_slides: 'uploads/slides_icsoc_designing.pdf'
 ---

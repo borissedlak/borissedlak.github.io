@@ -1,5 +1,8 @@
 ---
 title: SLO-Aware Task Offloading within Collaborative Vehicle Platoons
+featured: true
+summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+
 authors:
 - Boris Sedlak
 - Andrea Morichetta
@@ -31,7 +34,7 @@ abstract: In the context of autonomous vehicles (AVs), offloading is essential f
   large AV platoons; within seconds, it detects and resolves SLO violations through
   offloading.
 tags:
-- Computer Science - Distributed
-- Parallel
-- and Cluster Computing
+- Vehicular Edge Computing
+- Service Level Objectives
+- Distributed Systems
 ---

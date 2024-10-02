@@ -604,62 +604,6 @@
 
 
 
-<link type="text/css" rel="stylesheet" href="/dist/pagefind/pagefind-ui.be766eb419317a14ec769d216e9779bfe8f3737c80e780f4ba0dafb57a41a482.css" integrity="sha256-vnZutBkxehTsdp0hbpd5v&#43;jzc3yA54D0ug2vtXpBpII=" />
-
-
-<script src="/dist/pagefind/pagefind-ui.87693d7c6f2b3b347ce359d0ede762c033419f0a32b22ce508c335a81d841f1b.js" integrity="sha256-h2k9fG8rOzR841nQ7ediwDNBnwoysizlCMM1qB2EHxs="></script>
-
-
-<script>window.hbb.pagefind = {"baseUrl":"/"};</script>
-
-<style>
-  html.dark {
-    --pagefind-ui-primary: #eeeeee;
-    --pagefind-ui-text: #eeeeee;
-    --pagefind-ui-background: #152028;
-    --pagefind-ui-border: #152028;
-    --pagefind-ui-tag: #152028;
-  }
-</style>
-
-<script>
-  window.addEventListener('DOMContentLoaded', (event) => {
-    new PagefindUI({
-      element: "#search",
-      showSubResults: true,
-      baseUrl: window.hbb.pagefind.baseUrl,
-      bundlePath: window.hbb.pagefind.baseUrl + "pagefind/",
-    });
-  });
-  document.addEventListener('DOMContentLoaded', () => {
-    let element = document.getElementById('search');
-    let trigger = document.getElementById('search_toggle');
-
-    if (trigger) {
-      trigger.addEventListener('click', () => {
-        element.classList.toggle('hidden');
-        element.querySelector("input").value = ""
-        element.querySelector("input").focus()
-
-        if (!element.classList.contains('hidden')) {
-          let clear_trigger = document.querySelector('.pagefind-ui__search-clear');
-
-          if (clear_trigger && !clear_trigger.hasAttribute('listenerOnClick')) {
-            clear_trigger.setAttribute('listenerOnClick', 'true');
-
-            clear_trigger.addEventListener('click', () => {
-              element.classList.toggle('hidden');
-            });
-          }
-        }
-
-      });
-    }
-  });
-</script>
-
-
-
 
 
 
@@ -830,13 +774,6 @@
       
       
       
-      <button
-        aria-label="search"
-        class="text-black hover:text-primary  inline-block px-3 text-xl dark:text-white"
-        id="search_toggle">
-        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-      </button>
-      
 
       
       
@@ -874,8 +811,6 @@
   </nav>
 </header>
 
-
-<div id="search" class="hidden p-3"></div>
 
 
         
@@ -1547,6 +1482,71 @@
 
     <a
       class="relative block aspect-video"
+      href="/publication/sedlak-slo-aware-2024/" >
+
+      <img alt="SLO-Aware Task Offloading within Collaborative Vehicle Platoons"
+           class="object-fill transition-all"
+           data-nimg="fill"
+           decoding="async"
+           fetchpriority="high" height="540" loading="lazy" src="/publication/sedlak-slo-aware-2024/featured_hu11455682501719825650.webp"
+           style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"
+           width="960"></a>
+  </div>
+  
+  <div class="">
+    <div class="">
+      <div class="flex gap-3">
+        
+        <a href="/tags/vehicular-edge-computing/"><span
+          class="inline-block text-xs font-medium tracking-wider uppercase mt-5 text-primary-700 dark:text-primary-300">Vehicular Edge Computing</span></a>
+        
+      </div>
+      
+      <h2 class="text-lg font-semibold leading-snug tracking-tight mt-2 dark:text-white"><a
+        href="/publication/sedlak-slo-aware-2024/" ><span
+        class="bg-gradient-to-r from-primary-200 to-primary-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-primary-800 dark:to-primary-900">SLO-Aware Task Offloading within Collaborative Vehicle Platoons
+          </span></a>
+      </h2>
+      
+      <div class="grow"><p class="mt-2 line-clamp-3 text-sm text-gray-500 dark:text-gray-400"><a
+        href="/publication/sedlak-slo-aware-2024/" >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.</a></p>
+      </div>
+      <div class="flex-none">
+        <div class="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400 cursor-default">
+          
+          
+          <time class="truncate text-sm" datetime="2024-09-01">Sep 1, 2024</time>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<div class="group cursor-pointer">
+
+  
+  
+  
+    
+  
+  
+  <div class="overflow-hidden rounded-md bg-gray-100 transition-all hover:scale-105 dark:bg-gray-800">
+
+    <a
+      class="relative block aspect-video"
       href="/publication/sedlak-equilibrium-2024/" >
 
       <img alt="Equilibrium in the Computing Continuum through Active Inference"
@@ -1582,71 +1582,6 @@
           
           
           <time class="truncate text-sm" datetime="2024-04-01">Apr 1, 2024</time>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-  
-    
-
-
-
-
-
-
-
-
-
-<div class="group cursor-pointer">
-
-  
-  
-  
-    
-  
-  
-  <div class="overflow-hidden rounded-md bg-gray-100 transition-all hover:scale-105 dark:bg-gray-800">
-
-    <a
-      class="relative block aspect-video"
-      href="/publication/sedlak-designing-2023/" >
-
-      <img alt="Designing Reconfigurable Intelligent Systems with Markov Blankets"
-           class="object-fill transition-all"
-           data-nimg="fill"
-           decoding="async"
-           fetchpriority="high" height="540" loading="lazy" src="/publication/sedlak-designing-2023/featured_hu13050338096613343553.webp"
-           style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"
-           width="960"></a>
-  </div>
-  
-  <div class="">
-    <div class="">
-      <div class="flex gap-3">
-        
-        <a href="/tags/service-level-objectives/"><span
-          class="inline-block text-xs font-medium tracking-wider uppercase mt-5 text-primary-700 dark:text-primary-300">Service Level Objectives</span></a>
-        
-      </div>
-      
-      <h2 class="text-lg font-semibold leading-snug tracking-tight mt-2 dark:text-white"><a
-        href="/publication/sedlak-designing-2023/" ><span
-        class="bg-gradient-to-r from-primary-200 to-primary-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-primary-800 dark:to-primary-900">Designing Reconfigurable Intelligent Systems with Markov Blankets
-          </span></a>
-      </h2>
-      
-      <div class="grow"><p class="mt-2 line-clamp-3 text-sm text-gray-500 dark:text-gray-400"><a
-        href="/publication/sedlak-designing-2023/" >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.</a></p>
-      </div>
-      <div class="flex-none">
-        <div class="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400 cursor-default">
-          
-          
-          <time class="truncate text-sm" datetime="2023-12-01">Dec 1, 2023</time>
         </div>
       </div>
 
@@ -2426,71 +2361,9 @@
   
 
 
-<div class="container px-8 mx-auto xl:px-5 py-5 lg:py-8 max-w-[500px] justify-center">
+<div class="container px-8 mx-auto xl:px-5 py-5 lg:py-8 max-w-screen-lg ">
   <div class="grid gap-10 md:grid-cols-1 lg:gap-10">
 
-
-  
-    
-
-
-
-
-
-
-
-
-
-<div class="group cursor-pointer">
-
-  
-  
-  
-    
-  
-  
-  <div class="overflow-hidden rounded-md bg-gray-100 transition-all hover:scale-105 dark:bg-gray-800">
-
-    <a
-      class="relative block aspect-video"
-      href="/event/example/" >
-
-      <img alt="Example Talk"
-           class="object-fill transition-all"
-           data-nimg="fill"
-           decoding="async"
-           fetchpriority="high" height="540" loading="lazy" src="/event/example/featured_hu17653910659495067344.webp"
-           style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"
-           width="960"></a>
-  </div>
-  
-  <div class="">
-    <div class="">
-      <div class="flex gap-3">
-        
-      </div>
-      
-      <h2 class="text-lg font-semibold leading-snug tracking-tight mt-2 dark:text-white"><a
-        href="/event/example/" ><span
-        class="bg-gradient-to-r from-primary-200 to-primary-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-primary-800 dark:to-primary-900">Example Talk
-          </span></a>
-      </h2>
-      
-      <div class="grow"><p class="mt-2 line-clamp-3 text-sm text-gray-500 dark:text-gray-400"><a
-        href="/event/example/" >
-        An example talk using Hugo Blox Builder&#39;s Markdown slides feature.</a></p>
-      </div>
-      <div class="flex-none">
-        <div class="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400 cursor-default">
-          
-          
-          <time class="truncate text-sm" datetime="2030-06-01">Jun 1, 2030</time>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
 
   
 
@@ -2686,8 +2559,12 @@
             Present
           
         </time>
-        <div class="mb-4 text-base font-normal text-gray-500 dark:text-gray-300 prose prose-slate dark:prose-invert"><p>Working under Prof. <a href="https://dsg.tuwien.ac.at/team/sd/" target="_blank" rel="noopener">Schahram Dustdar</a> at the Distributed Systems Group (<a href="https://dsg.tuwien.ac.at/" target="_blank" rel="noopener">DSG</a>); focusing on ensuring runtime requirements in large-scale computing systems through causal inference. Fully funded by EU Horizon (<a href="https://www.teadal.eu/" target="_blank" rel="noopener">Teadal</a>).</p>
-<p>Research visit at Tsinghua University under Prof. <a href="https://sites.google.com/site/profxiaoboqu/" target="_blank" rel="noopener">Xiaobo Qu</a>; working on emerging transportation solutions for collaborative offloading in vehicular edge computing.</p>
+        <div class="mb-4 text-base font-normal text-gray-500 dark:text-gray-300 prose prose-slate dark:prose-invert"><p>Working under Prof. 
+ at the Distributed Systems Group (
+); focusing on ensuring runtime requirements in large-scale computing systems through causal inference. Fully funded by EU Horizon (
+).</p>
+<p>Research visit at Tsinghua University under Prof. 
+; working on emerging transportation solutions for collaborative offloading in vehicular edge computing.</p>
 </div>
 
         
