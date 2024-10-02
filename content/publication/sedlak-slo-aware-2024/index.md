@@ -34,7 +34,4 @@ tags:
 - Computer Science - Distributed
 - Parallel
 - and Cluster Computing
-links:
-- name: URL
-  url: http://arxiv.org/abs/2409.17667
 ---

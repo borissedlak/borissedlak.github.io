@@ -5,11 +5,12 @@ authors:
 - Victor Casamayor Pujol
 - Praveen Kumar Donta
 - Schahram Dustdar
-date: '2024-01-01'
+date: '2024-04-01'
 publishDate: '2024-10-01T15:35:15.183483Z'
 publication_types:
 - article-journal
 publication: '*Future Generation Computer System*'
+doi: 10.1016/j.future.2024.05.056
 abstract: Computing Continuum (CC) systems are challenged to ensure the intricate
   requirements of each computational tier. Given the system’s scale, the Service Level
   Objectives (SLOs), which are expressed as these requirements, must be disaggregated
@@ -34,7 +35,7 @@ tags:
 - Computing Continuum
 - Equilibrium
 
-
+summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 featured: true
-url_slides: 'uploads/Paper_PrivacyModel.pptx.pdf'
+url_slides: 'uploads/slides_fgcs_equilibrium.pdf'
 ---

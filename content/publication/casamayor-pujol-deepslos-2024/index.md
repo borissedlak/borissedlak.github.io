@@ -23,7 +23,4 @@ abstract: The advent of the computing continuum, i.e., the blending of all exist
   to each SLO while the DeepSLO hierarchy remains to account for objectives dependencies.
   Finally, DeepSLOs are represented graphically, as well as individual SLOs enabling
   a human interpretation of the system performance.
-links:
-- name: URL
-  url: https://dl.acm.org/doi/10.1145/3663338.3663681
 ---

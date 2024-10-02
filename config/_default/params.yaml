@@ -8,6 +8,9 @@ appearance:
   mode: system
   color: emerald
 
+customCSS:
+  - css/custom.css
+
 # SEO
 marketing:
   seo:
@@ -31,6 +34,7 @@ header:
   navbar:
     enable: true
     blox: "navbar"
+    align: "center"
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true

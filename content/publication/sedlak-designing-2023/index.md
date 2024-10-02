@@ -5,7 +5,7 @@ authors:
 - Victor Casamayor Pujol
 - Praveen Kumar Donta
 - Schahram Dustdar
-date: '2023-01-01'
+date: '2023-12-01'
 publishDate: '2024-10-01T15:35:15.260956Z'
 publication_types:
 - paper-conference
@@ -30,4 +30,8 @@ tags:
 - Intelligent Systems
 - Markov Blankets
 - Sensory State
+
+featured: true
+summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+url_slides: 'uploads/slides_icsoc_designing.pdf'
 ---

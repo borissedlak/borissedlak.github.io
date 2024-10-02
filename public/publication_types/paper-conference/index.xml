@@ -7,7 +7,7 @@
     <description>Paper-Conference</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <url>http://localhost:1313/media/icon_hu8403199540000279549.png</url>
       <title>Paper-Conference</title>
       <link>http://localhost:1313/publication_types/paper-conference/</link>
     </image>
@@ -17,6 +17,14 @@
       <link>http://localhost:1313/publication/casamayor-pujol-deepslos-2024/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publication/casamayor-pujol-deepslos-2024/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markov Blanket Composition of SLOs</title>
+      <link>http://localhost:1313/publication/sedlak-markov-2024/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/sedlak-markov-2024/</guid>
       <description></description>
     </item>
     
@@ -37,10 +45,10 @@
     </item>
     
     <item>
-      <title>Markov Blanket Composition of SLOs</title>
-      <link>http://localhost:1313/publication/sedlak-markov-2024/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/sedlak-markov-2024/</guid>
+      <title>Designing Reconfigurable Intelligent Systems with Markov Blankets</title>
+      <link>http://localhost:1313/publication/sedlak-designing-2023/</link>
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/sedlak-designing-2023/</guid>
       <description></description>
     </item>
     
@@ -49,14 +57,6 @@
       <link>http://localhost:1313/publication/sedlak-controlling-2023/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publication/sedlak-controlling-2023/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Designing Reconfigurable Intelligent Systems with Markov Blankets</title>
-      <link>http://localhost:1313/publication/sedlak-designing-2023/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/sedlak-designing-2023/</guid>
       <description></description>
     </item>
     

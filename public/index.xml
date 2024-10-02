@@ -7,7 +7,7 @@
     <description>Boris Sedlak (TUW)</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <url>http://localhost:1313/media/icon_hu8403199540000279549.png</url>
       <title>Boris Sedlak (TUW)</title>
       <link>http://localhost:1313/</link>
     </image>
@@ -61,10 +61,26 @@
     </item>
     
     <item>
+      <title>Markov Blanket Composition of SLOs</title>
+      <link>http://localhost:1313/publication/sedlak-markov-2024/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/sedlak-markov-2024/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Projects</title>
       <link>http://localhost:1313/projects/</link>
       <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Equilibrium in the Computing Continuum through Active Inference</title>
+      <link>http://localhost:1313/publication/sedlak-equilibrium-2024/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/sedlak-equilibrium-2024/</guid>
       <description></description>
     </item>
     
@@ -93,18 +109,10 @@
     </item>
     
     <item>
-      <title>Equilibrium in the Computing Continuum through Active Inference</title>
-      <link>http://localhost:1313/publication/sedlak-equilibrium-2024/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/sedlak-equilibrium-2024/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Markov Blanket Composition of SLOs</title>
-      <link>http://localhost:1313/publication/sedlak-markov-2024/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/sedlak-markov-2024/</guid>
+      <title>Designing Reconfigurable Intelligent Systems with Markov Blankets</title>
+      <link>http://localhost:1313/publication/sedlak-designing-2023/</link>
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/sedlak-designing-2023/</guid>
       <description></description>
     </item>
     
@@ -371,7 +379,7 @@
 
 
 
-&lt;div id=&#34;chart-514798623&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-387521946&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -389,7 +397,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-514798623&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-387521946&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1051,14 +1059,6 @@ Parallel 4   :         des6, after des4, 1d
       <link>http://localhost:1313/publication/sedlak-privacy-2023/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publication/sedlak-privacy-2023/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Designing Reconfigurable Intelligent Systems with Markov Blankets</title>
-      <link>http://localhost:1313/publication/sedlak-designing-2023/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/sedlak-designing-2023/</guid>
       <description></description>
     </item>
     

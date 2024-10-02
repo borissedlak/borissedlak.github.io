@@ -5,12 +5,13 @@ authors:
 - Victor Casamayor Pujol
 - Praveen Kumar Donta
 - Schahram Dustdar
-date: '2024-01-01'
+date: '2024-06-01'
 publishDate: '2024-10-01T15:35:15.191582Z'
 publication_types:
 - paper-conference
 publication: '*2024 IEEE International Conference on Edge Computing and Communications
   (EDGE)*'
+doi: 10.1109/EDGE62653.2024.00025
 abstract: Smart environments use composable microservices pipelines to process Internet
   of Things (IoT) data, where each service is dependent on the outcome of its predecessor.
   To ensure Quality of Service (QoS), individual services must fulfill Service Level
@@ -28,4 +29,5 @@ abstract: Smart environments use composable microservices pipelines to process I
   subsequent services (e.g., consumer latency). The results showed how our method
   can support infrastructure providers by optimizing SLO fulfillment for arbitrary
   devices currently available.
+url_slides: 'uploads/slides_services_composition.pdf'
 ---
