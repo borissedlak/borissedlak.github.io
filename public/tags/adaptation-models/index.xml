@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Adaptation Models | Boris Sedlak (TUW)</title>
+    <title>Adaptation Models | Boris Sedlak, TU Wien</title>
     <link>http://localhost:1313/tags/adaptation-models/</link>
       <atom:link href="http://localhost:1313/tags/adaptation-models/index.xml" rel="self" type="application/rss+xml" />
     <description>Adaptation Models</description>
