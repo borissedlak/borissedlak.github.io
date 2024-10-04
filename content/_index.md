@@ -34,11 +34,13 @@ sections:
       title: '💡 Research Vision'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
-
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        Some people say that computers are complex, and I'd agree because of the countless computational layers for which I cannot grasp what is happening there. Luckily, most of these things happen encapsulated from us so that we don't need a Ph.D. in maths anymore to operate a PC. Impressive how all of this was engineered by humans within less than a century.
         
-        Please reach out to collaborate 😃
+        Nevertheless, I'd claim that the human body, as a complex system, went through thousands of years of evolution, and we're still far from understanding the manifold of processes that happen unconsciously to all of us. While it can be difficult to see the similarity between humans and computers, their inherent goal is to achieve equilibrium in each of their cells or components. As the size of computing systems increases, my goal is to use concepts from neuroscience to build a causal understanding of computing systems, which can be used to ensure processing requirements.
+
+        If you wish to discuss these topics or you are interested in collaborating, please don't hesitate to reach out to me 😃
+
+      #When it comes to verifying ideas, I think that there is no way around practical experiments; while simulations can be a nice way to get an intuition, I still consider myself a software engineer, and software is intended to be run live.
     design:
       columns: '1'
   - block: collection

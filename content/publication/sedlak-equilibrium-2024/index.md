@@ -13,8 +13,7 @@ publication_types:
 publication: '*Future Generation Computer System*'
 doi: 10.1016/j.future.2024.05.056
 abstract: Computing Continuum (CC) systems are challenged to ensure the intricate
-  requirements of each computational tier. Given the system’s scale, the Service Level
-  Objectives (SLOs), which are expressed as these requirements, must be disaggregated
+  requirements of each computational tier. Given the system’s scale, the Service Level Objectives (SLOs), which are expressed as these requirements, must be disaggregated
   into smaller parts that can be decentralized. We present our framework for collaborative
   edge intelligence, enabling individual edge devices to (1) develop a causal understanding
   of how to enforce their SLOs and (2) transfer knowledge to speed up the onboarding
@@ -36,7 +35,7 @@ tags:
 - Computing Continuum
 - Equilibrium
 
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: When it comes to ensuring processing requirements, the heterogeneity between processing devices makes it impossible to fit one solution to all devices. We apply Active Inference to find the best for each of them.
 featured: true
 url_slides: 'uploads/slides_fgcs_equilibrium.pdf'
 ---

@@ -1,7 +1,7 @@
 ---
 title: SLO-Aware Task Offloading within Collaborative Vehicle Platoons
 featured: true
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: Imagine you're a video processing service executed at an autonomous vehicle; in case you're struggling, which vehicle can best fulfill your resuirements and what are the implications to co-located services?
 share: false
 
 authors:
