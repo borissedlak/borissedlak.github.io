@@ -55,9 +55,9 @@ education:
     date_start: 2022-09-01
     date_end: 
     summary: |
-      Working under Prof. [Schahram Dustdar](https://dsg.tuwien.ac.at/team/sd/) at the Distributed Systems Group ([DSG](https://dsg.tuwien.ac.at/)); focusing on ensuring runtime requirements in large-scale computing systems through causal inference. Fully funded by EU Horizon ([Teadal](https://www.teadal.eu/)).
+      Working under Prof. <a href="https://dsg.tuwien.ac.at/team/sd/" target="_blank">Schahram Dustdar</a> at the Distributed Systems Group (<a href="https://dsg.tuwien.ac.at/" target="_blank">DSG</a>); focusing on ensuring runtime requirements in large-scale computing systems through causal inference. Fully funded by EU Horizon (<a href="https://www.teadal.eu/" target="_blank">Teadal</a>).
 
-      Research visit at Tsinghua University under Prof. [Xiaobo Qu](https://sites.google.com/site/profxiaoboqu/); working on emerging transportation solutions for collaborative offloading in vehicular edge computing.
+      Research visit at Tsinghua University under Prof. <a href="https://sites.google.com/site/profxiaoboqu/" target="_blank">Xiaobo Qu</a>; working on emerging transportation solutions for collaborative offloading in vehicular edge computing.
 
   - area: MSc Software Engineering
     institution: TU Wien, Austria
