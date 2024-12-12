@@ -1,3 +1,8 @@
 #section-resume-biography-3 p, div,li, h2, h3 {
     color: #fff; /* Change this to your desired color */
   }
+
+/*.avatar {*/
+/*  width: 250px !important;*/
+/*  height: 250px !important;*/
+/*}*/

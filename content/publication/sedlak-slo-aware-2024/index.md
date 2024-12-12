@@ -1,7 +1,7 @@
 ---
 title: SLO-Aware Task Offloading within Collaborative Vehicle Platoons
 featured: true
-summary: Imagine you're a video processing service executed at an autonomous vehicle; in case you're struggling, which vehicle can best fulfill your resuirements and what are the implications to co-located services?
+summary: Imagine you're a video processing service executed at an autonomous vehicle; in case you're struggling, which vehicle can best fulfill your requirements and what are the implications to co-located services?
 share: false
 
 authors:
@@ -12,12 +12,12 @@ authors:
 - Liang Wang
 - Schahram Dustdar
 - Xiaobo Qu
-date: '2024-09-01'
-publishDate: '2024-10-01T15:35:15.297481Z'
+date: '2024-12-01'
+publishDate: '2024-12-01T15:35:15.297481Z'
 publication_types:
-- manuscript
-publication: '*arXiv*'
-doi: 10.48550/arXiv.2409.17667
+- paper-conference
+publication: '*Service-Oriented Computing*'
+doi: 10.1007/978-981-96-0808-9_6
 abstract: In the context of autonomous vehicles (AVs), offloading is essential for
   guaranteeing the execution of perception tasks, e.g., mobile mapping or object detection.
   While existing work focused extensively on minimizing inter-vehicle networking latency
@@ -38,4 +38,5 @@ tags:
 - Vehicular Edge Computing
 - Service Level Objectives
 - Distributed Systems
+url_slides: 'uploads/slides_icsoc_slo_aware.pdf'
 ---
