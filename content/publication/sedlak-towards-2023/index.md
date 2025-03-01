@@ -14,7 +14,7 @@ authors:
 - Pierluigi Plebani
 date: '2023-01-01'
 publishDate: '2024-10-01T15:35:15.229721Z'
-publication_types:
+publication_types: 
 - paper-conference
 publication: '*Service-Oriented Computing*'
 doi: 10.1007/978-3-031-45728-9_9
