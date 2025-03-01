@@ -73,7 +73,7 @@ sections:
           - event
     design:
       view: article-grid
-      columns: 1
+      columns: 2
   - block: resume-experience
     content:
       username: admin

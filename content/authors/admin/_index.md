@@ -185,4 +185,4 @@ awards:
 
 ## About Me
 
-Boris Sedlak is a Ph.D. student in the Distributed Systems Group at TU Wien, Austria. He received his B.Sc. in Media Informatics at the University of Applied Sciences in St. Pölten and his M.Sc. in Software Engineering & Internet Computing at the TU Wien. He worked for four years as a software engineer before starting to work on Teadal, a European project on federated and trustworthy data lakes.
+Hey everyone, I'm Boris Sedlak, currently a Ph.D. student in the Distributed Systems Group at TU Wien, Austria, where I also received my M.Sc. in Software Engineering & Internet Computing. Before getting into science, I worked for four years as a software engineer which also gave me a wider perspective. During my studies, I focused on orchestration mechanisms for Edge computing environments, or even bigger, the Computing Continuum, but always with a focus on QoS and scalability.

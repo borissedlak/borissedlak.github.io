@@ -29,5 +29,6 @@ tags:
 - Data Mesh
 - Serverless Computation
 url_slides: 'uploads/slides_summersoc_serverless.pdf'
+url_poster: 'uploads/poster_summersoc.pdf'
 url_video: 'https://www.youtube.com/watch?v=JFdgV617Gig'
 ---
