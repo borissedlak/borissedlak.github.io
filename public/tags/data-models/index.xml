@@ -5,12 +5,21 @@
     <link>http://localhost:1313/tags/data-models/</link>
       <atom:link href="http://localhost:1313/tags/data-models/index.xml" rel="self" type="application/rss+xml" />
     <description>Data Models</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu_f94979c9ea4b2e8b.png</url>
+      <url>http://localhost:1313/media/icon_hu581ec2789a34ba2fd3bc7e2e4d2e72d7_24267_512x512_fill_lanczos_center_3.png</url>
       <title>Data Models</title>
       <link>http://localhost:1313/tags/data-models/</link>
     </image>
+    
+    <item>
+      <title>Towards Multi-dimensional Elasticity for Pervasive Stream Processing Services</title>
+      <link>http://localhost:1313/publication/sedlak-towards-2025/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/sedlak-towards-2025/</guid>
+      <description>&lt;p&gt;Add the &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; for the publication here using Markdown formatting.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Active Inference on the Edge: A Design Study</title>

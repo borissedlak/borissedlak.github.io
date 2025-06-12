@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Post-Doc Researcher
+role: PostDoc Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -50,10 +50,10 @@ interests:
   - Runtime requirements
 
 education:
-  - area: PhD Computer Science (Ongoing)
+  - area: PhD Computer Science
     institution: TU Wien, Austria
     date_start: 2022-09-01
-    date_end: 
+    date_end: 2022-05-01
     summary: |
       Working under Prof. <a href="https://dsg.tuwien.ac.at/team/sd/" target="_blank">Schahram Dustdar</a> at the Distributed Systems Group (<a href="https://dsg.tuwien.ac.at/" target="_blank">DSG</a>); focusing on ensuring runtime requirements in large-scale computing systems through causal inference. Fully funded by EU Horizon (<a href="https://www.teadal.eu/" target="_blank">Teadal</a>).
 
