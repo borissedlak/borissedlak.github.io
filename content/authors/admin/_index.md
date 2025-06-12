@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Pre-Doc Researcher
+role: Post-Doc Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -185,4 +185,4 @@ awards:
 
 ## About Me
 
-Hey everyone, I'm Boris Sedlak, currently a Ph.D. student in the Distributed Systems Group at TU Wien, Austria, where I also received my M.Sc. in Software Engineering & Internet Computing. Before getting into science, I worked for four years as a software engineer which also gave me a wider perspective. During my studies, I focused on orchestration mechanisms for Edge computing environments, or even bigger, the Computing Continuum, but always with a focus on QoS and scalability.
+Hey everyone, I'm Boris Sedlak, currently a Postdoc in the Distributed Systems Group at TU Wien, Austria, where I also received my Ph.D. and M.Sc. in Software Engineering & Internet Computing. Before getting into science, I worked for four years as a software engineer which also gave me a wider perspective. During my studies, I focused on orchestration mechanisms for Edge computing environments, or even bigger, the Computing Continuum, but always with a focus on QoS and scalability.
