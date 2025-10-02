@@ -1,172 +1,203 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unsere Hochzeit</title>
-  <style>
-    body {
-      font-family: system-ui, -apple-system, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #fafafa;
-      color: #333;
-      text-align: center;
-    }
-    header {
-      background: #f5e6eb;
-      padding: 2rem 1rem;
-      position: relative;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: #444;
-    }
-    #lang-toggle {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      background: #d86a77;
-      border: none;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    main {
-      padding: 2rem 1rem;
-      max-width: 600px;
-      margin: auto;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    h2 {
-      font-size: 1.4rem;
-      margin-bottom: 0.5rem;
-      color: #555;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.75rem 1.25rem;
-      background: #d86a77;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-    }
-    footer {
-      background: #eee;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsere Hochzeit</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #fafafa;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background: #f5e6eb;
+            padding: 2rem 1rem;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #444;
+        }
+
+        #lang-toggle {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: #d86a77;
+            border: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        main {
+            padding: 2rem 1rem;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+
+        a.button {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.25rem;
+            background: #d86a77;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        footer {
+            background: #eee;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-  <header>
+<header>
     <h1 id="title">Laura & Boris</h1>
     <p id="subtitle"></p>
-      <p>Samstag, 23. Mai 2026</p>
+    <p>Samstag, 23. Mai 2026</p>
     <button id="lang-toggle">EN</button>
-  </header>
+</header>
 
-  <main>
+<main>
     <section>
-      <h2 id="when-title"></h2>
-      <p id="when-text"></p>
-      <p id="where-title"></p>
-      <p id="where-text"></p>
-      <a class="button" href="https://maps.app.goo.gl/Yp1dhhfb4JB9FY7q6" target="_blank" id="map-link"></a>
+        <h2 id="church-title"></h2>
+        <p id="church-time"></p>
+        <p id="church-address"></p>
+        <a class="button" href="https://maps.app.goo.gl/Yp1dhhfb4JB9FY7q6" target="_blank" id="map-church"></a>
     </section>
 
     <hr>
 
     <section>
-      <h2 id="reception-title"></h2>
-      <p id="reception-text"></p>
-      <p id="where-title-2"></p>
-      <p id="where-text-2"></p>
-      <a class="button" href="https://maps.app.goo.gl/tPbbUYUjETXdVpjj8" target="_blank" id="map-link-2"></a>
+        <h2 id="party-title"></h2>
+        <p id="party-time"></p>
+        <p id="party-address"></p>
+        <a class="button" href="https://maps.app.goo.gl/tPbbUYUjETXdVpjj8" target="_blank" id="map-party"></a>
     </section>
 
-<!--    <section>-->
-<!--      <h2 id="rsvp-title"></h2>-->
-<!--      <p id="rsvp-text"></p>-->
-<!--      <a class="button" href="mailto:ourwedding@email.com" id="rsvp-button"></a>-->
-<!--    </section>-->
-  </main>
+    <hr>
 
-  <footer>
+    <section>
+        <h2 id="hotel-title"></h2>
+        <p id="hotel-text"></p>
+        <!--        <p id="where-text-2"></p>-->
+        <!--        <a class="button" href="https://maps.app.goo.gl/tPbbUYUjETXdVpjj8" target="_blank" id="map-link-2"></a>-->
+
+        <iframe src="https://www.google.com/maps/d/embed?mid=1KNrDv7T6aVch5_oJGwfRQj5cGnuZEoA"
+                width="640"
+                height="480">
+        </iframe>
+    </section>
+
+
+    <!--    <section>-->
+    <!--      <h2 id="rsvp-title"></h2>-->
+    <!--      <p id="rsvp-text"></p>-->
+    <!--      <a class="button" href="mailto:ourwedding@email.com" id="rsvp-button"></a>-->
+    <!--    </section>-->
+</main>
+
+<footer>
     <p id="footer-text"></p>
-  </footer>
+</footer>
 
-  <script>
+<script>
     const translations = {
-      en: {
-        subtitle: "We’re getting married 🎉",
-        whenTitle: "When",
-        whenText: "Saturday, 12 July 2025<br>at 16:00",
-        whereTitle: "Where",
-        whereText: "Iglesia Santa María<br>Barcelona, Spain",
-        mapLink: "View on Map",
-        receptionTitle: "Reception",
-        receptionText: "After the ceremony<br>at Jardins de la Casa Felix",
-        rsvpTitle: "RSVP",
-        rsvpText: "Please let us know if you can join us!",
-        rsvpButton: "Send RSVP",
-        footerText: "We can’t wait to celebrate with you ❤️"
-      },
-      de: {
-        subtitle: "Wir heiraten 🎉",
-        whenTitle: "Kirchliche Trauung",
-        whenText: "Eintreffen um 12:30<br>Beginn um 13:00",
-        whereTitle: "--",
-        whereText: "Kirche Maria Attersee<br>Kirchenstraße 22<br>4864 Attersee am Attersee",
-        mapLink: "Karte anzeigen",
-        receptionTitle: "Feier im Michelhof",
-        receptionText: "Eintreffen ab 16:00",
-        whereTitle2: "--",
-        whereText2: "Haitzing 3<br>4643 Laakirchen",
-        rsvpTitle: "Rückmeldung",
-        rsvpText: "Bitte lasst uns wissen, ob ihr dabei seid!",
-        rsvpButton: "Antwort senden",
-        footerText: "Wir können es kaum erwarten, mit euch zu feiern ❤️"
-      }
+        en: {
+            subtitle: "We’re getting married 🎉",
+            whenTitle: "When",
+            whenText: "Saturday, 12 July 2025<br>at 16:00",
+            whereTitle: "Where",
+            whereText: "Iglesia Santa María<br>Barcelona, Spain",
+            mapLink: "View on Map",
+            receptionTitle: "Reception",
+            receptionText: "After the ceremony<br>at Jardins de la Casa Felix",
+            // rsvpTitle: "RSVP",
+            // rsvpText: "Please let us know if you can join us!",
+            // rsvpButton: "Send RSVP",
+            footerText: "We can’t wait to celebrate with you ❤️"
+        },
+        de: {
+            subtitle: "Wir heiraten 🎉",
+            whenTitle: "Kirchliche Trauung",
+            whenText: "Eintreffen um 12:30<br>Beginn um 13:00",
+            whereText: "Kirche Maria Attersee<br>Kirchenstraße 22<br>4864 Attersee am Attersee",
+            mapLink: "Navigieren in Maps",
+            receptionTitle: "Feier im Michelhof",
+            receptionText: "Eintreffen ab 16:00",
+            whereTitle2: "--",
+            whereText2: "Michlhof Haitzing 3<br>4643 Laakirchen",
+            hotelTitle: "Nächtigen im Umland",
+            hotelText: "Im Anschluss einige Empfehlungen von uns wo ihr nächtigen könnt. Für alle die ein Auto haben, oder sich eines organisieren können, ist Das Zeit vermutlich strategisch gut gelegen von der Hochzeitslocation aus; außerdem lädt es dazu ein am nächsten Tag den Attersee zu besuchen und mit uns dort zu entspannen" +
+                "<br><br><a href='https://maps.app.goo.gl/JUboHwhFMs2vNqNK6'>Stadtwirt Bruck</a> (€€) in Vöcklabruck" +
+                "<br><a href='https://maps.app.goo.gl/3iRfMcK2JVBPky8e9'>Hotel Lindner</a> (€€) in Vöcklabruck" +
+                "<br><a href='https://maps.app.goo.gl/AycLWsY9uXPM7A9QA'>Hotel Auerhahn</a> (€) in Vöcklabruck" +
+                "<br><a href='https://maps.app.goo.gl/21JcAdzNq5qaQqsj9'>Hotel Das Zeit</a> (€€) in Vöcklabruck",
+            // rsvpTitle: "Rückmeldung",
+            // rsvpText: "Bitte lasst uns wissen, ob ihr dabei seid!",
+            // rsvpButton: "Antwort senden",
+            footerText: "Wir können es kaum erwarten, mit euch zu feiern ❤️"
+        }
     };
 
     let currentLang = "de"; // default German
     const toggleBtn = document.getElementById("lang-toggle");
 
     function updateText() {
-      const t = translations[currentLang];
-      document.getElementById("subtitle").innerHTML = t.subtitle;
-      document.getElementById("when-title").textContent = t.whenTitle;
-      document.getElementById("when-text").innerHTML = t.whenText;
-      document.getElementById("where-title").textContent = t.whereTitle;
-      document.getElementById("where-text").innerHTML = t.whereText;
-      document.getElementById("map-link").textContent = t.mapLink;
-      document.getElementById("reception-title").textContent = t.receptionTitle;
-      document.getElementById("reception-text").innerHTML = t.receptionText;
-      document.getElementById("where-title-2").textContent = t.whereTitle2;
-      document.getElementById("where-text-2").innerHTML = t.whereText2;
-      document.getElementById("map-link-2").textContent = t.mapLink;
-      document.getElementById("rsvp-title").textContent = t.rsvpTitle;
-      document.getElementById("rsvp-text").innerHTML = t.rsvpText;
-      document.getElementById("rsvp-button").textContent = t.rsvpButton;
-      document.getElementById("footer-text").innerHTML = t.footerText;
-      toggleBtn.textContent = currentLang === "en" ? "DE" : "EN";
+        const t = translations[currentLang];
+        document.getElementById("subtitle").innerHTML = t.subtitle;
+
+        document.getElementById("church-title").textContent = t.whenTitle;
+        document.getElementById("church-time").innerHTML = t.whenText;
+        document.getElementById("church-address").innerHTML = t.whereText;
+
+        document.getElementById("party-title").textContent = t.receptionTitle;
+        document.getElementById("party-time").innerHTML = t.receptionText;
+        document.getElementById("party-address").innerHTML = t.whereText2;
+
+        document.getElementById("hotel-title").textContent = t.hotelTitle;
+        document.getElementById("hotel-text").innerHTML = t.hotelText;
+
+        document.getElementById("map-church").textContent = t.mapLink;
+        document.getElementById("map-party").textContent = t.mapLink;
+
+        // document.getElementById("rsvp-title").textContent = t.rsvpTitle;
+        // document.getElementById("rsvp-text").innerHTML = t.rsvpText;
+        // document.getElementById("rsvp-button").textContent = t.rsvpButton;
+        document.getElementById("footer-text").innerHTML = t.footerText;
+        toggleBtn.textContent = currentLang === "en" ? "DE" : "EN";
     }
 
     // initial fill with German
     updateText();
 
     toggleBtn.addEventListener("click", () => {
-      currentLang = currentLang === "en" ? "de" : "en";
-      updateText();
+        currentLang = currentLang === "en" ? "de" : "en";
+        updateText();
     });
-  </script>
+</script>
 </body>
 </html>
