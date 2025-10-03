@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unsere Hochzeit</title>
+    <title>👰 Laura & Boris 🤵</title>
     <style>
         body {
             font-family: system-ui, -apple-system, Arial, sans-serif;
@@ -103,8 +103,6 @@
     <section>
         <h2 id="hotel-title"></h2>
         <p id="hotel-text"></p>
-        <!--        <p id="where-text-2"></p>-->
-        <!--        <a class="button" href="https://maps.app.goo.gl/tPbbUYUjETXdVpjj8" target="_blank" id="map-link-2"></a>-->
 
         <iframe src="https://www.google.com/maps/d/embed?mid=1KNrDv7T6aVch5_oJGwfRQj5cGnuZEoA"
                 width="640"
@@ -112,12 +110,12 @@
         </iframe>
     </section>
 
+    <hr>
 
-    <!--    <section>-->
-    <!--      <h2 id="rsvp-title"></h2>-->
-    <!--      <p id="rsvp-text"></p>-->
-    <!--      <a class="button" href="mailto:ourwedding@email.com" id="rsvp-button"></a>-->
-    <!--    </section>-->
+    <section>
+        <h2 id="activities-title"></h2>
+        <p id="activities-text"></p>
+    </section>
 </main>
 
 <footer>
@@ -128,16 +126,23 @@
     const translations = {
         en: {
             subtitle: "We’re getting married 🎉",
-            whenTitle: "When",
-            whenText: "Saturday, 12 July 2025<br>at 16:00",
-            whereTitle: "Where",
-            whereText: "Iglesia Santa María<br>Barcelona, Spain",
-            mapLink: "View on Map",
-            receptionTitle: "Reception",
-            receptionText: "After the ceremony<br>at Jardins de la Casa Felix",
-            // rsvpTitle: "RSVP",
-            // rsvpText: "Please let us know if you can join us!",
-            // rsvpButton: "Send RSVP",
+            whenTitle: "Church Ceremony",
+            whenText: "Arrival at 12:30<br>Start at 13:00",
+            whereText: "Kirche Maria Attersee<br>Kirchenstraße 22<br>4864 Attersee am Attersee",
+            mapLink: "Open in Maps",
+            receptionTitle: "Party at Michlhof",
+            receptionText: "Arrival from 16:00",
+            whereText2: "Michlhof, Haitzing 3<br>4643 Laakirchen",
+            hotelTitle: "Stay Nearby",
+            hotelText:
+                "Below are a few places we recommend for the night. If you have a car — or can arrange one — “Das Zeit” is likely a convenient base relative to the wedding locations; it also invites you to visit Lake Attersee the next day and relax with us." +
+                "<br><br><a href='https://maps.app.goo.gl/JUboHwhFMs2vNqNK6'>Stadtwirt Bruck</a> (€€) in Vöcklabruck" +
+                "<br><a href='https://maps.app.goo.gl/3iRfMcK2JVBPky8e9'>Hotel Lindner</a> (€€) in Vöcklabruck" +
+                "<br><a href='https://maps.app.goo.gl/AycLWsY9uXPM7A9QA'>Hotel Auerhahn</a> (€) in Vöcklabruck" +
+                "<br><a href='https://maps.app.goo.gl/21JcAdzNq5qaQqsj9'>Hotel Das Zeit</a> (€€) in Schörfling/Attersee",
+            activityTitle: "Make a Weekend of It",
+            activityText:
+                "In addition to Sunday, Monday is also a public holiday. If you’d like to spend a bit more time with us, we’d love to relax at Lake Attersee and, for example, take an <a href='https://atterseeschifffahrt.at/'>Attersee boat tour</a>.",
             footerText: "We can’t wait to celebrate with you ❤️"
         },
         de: {
@@ -151,15 +156,14 @@
             whereTitle2: "--",
             whereText2: "Michlhof Haitzing 3<br>4643 Laakirchen",
             hotelTitle: "Nächtigen im Umland",
-            hotelText: "Im Anschluss einige Empfehlungen von uns wo ihr nächtigen könnt. Für alle die ein Auto haben, oder sich eines organisieren können, ist Das Zeit vermutlich strategisch gut gelegen von der Hochzeitslocation aus; außerdem lädt es dazu ein am nächsten Tag den Attersee zu besuchen und mit uns dort zu entspannen" +
+            hotelText: "Im Anschluss einige Empfehlungen von uns wo ihr nächtigen könnt. Für alle die ein Auto haben, oder sich eines organisieren können, ist Das Zeit vermutlich strategisch gut gelegen von der Hochzeitslocation aus; außerdem lädt es dazu ein am nächsten Tag den Attersee zu besuchen und mit uns dort zu entspannen. " +
                 "<br><br><a href='https://maps.app.goo.gl/JUboHwhFMs2vNqNK6'>Stadtwirt Bruck</a> (€€) in Vöcklabruck" +
                 "<br><a href='https://maps.app.goo.gl/3iRfMcK2JVBPky8e9'>Hotel Lindner</a> (€€) in Vöcklabruck" +
                 "<br><a href='https://maps.app.goo.gl/AycLWsY9uXPM7A9QA'>Hotel Auerhahn</a> (€) in Vöcklabruck" +
                 "<br><a href='https://maps.app.goo.gl/21JcAdzNq5qaQqsj9'>Hotel Das Zeit</a> (€€) in Schörfling/Attersee",
-            // rsvpTitle: "Rückmeldung",
-            // rsvpText: "Bitte lasst uns wissen, ob ihr dabei seid!",
-            // rsvpButton: "Antwort senden",
-            footerText: "Wir können es kaum erwarten, mit euch zu feiern ❤️"
+            activityTitle: "Noch mehr Spaß",
+            activityText: "Zusätzlich zum Sonntag, ist auch noch der Montag ein Feiertag, also falls ihr noch ein wenig mehr Zeit mit uns verbringen wollt, dann freuen wir uns sehr am Attersee zu entspannen und zum Beispiel eine <a href='https://atterseeschifffahrt.at/'>Attersee Rundfahrt</a> zu unternehmen.",
+            footerText: "Wir freuen uns schon sehr auf euch und die schöne Feier ❤️"
         }
     };
 
@@ -181,12 +185,12 @@
         document.getElementById("hotel-title").textContent = t.hotelTitle;
         document.getElementById("hotel-text").innerHTML = t.hotelText;
 
+        document.getElementById("activities-title").innerHTML = t.activityTitle;
+        document.getElementById("activities-text").innerHTML = t.activityText;
+
         document.getElementById("map-church").textContent = t.mapLink;
         document.getElementById("map-party").textContent = t.mapLink;
 
-        // document.getElementById("rsvp-title").textContent = t.rsvpTitle;
-        // document.getElementById("rsvp-text").innerHTML = t.rsvpText;
-        // document.getElementById("rsvp-button").textContent = t.rsvpButton;
         document.getElementById("footer-text").innerHTML = t.footerText;
         toggleBtn.textContent = currentLang === "en" ? "DE" : "EN";
     }
