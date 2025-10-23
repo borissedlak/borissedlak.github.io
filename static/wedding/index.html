@@ -71,6 +71,23 @@
             font-size: 0.9rem;
             color: #666;
         }
+
+        .map-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            aspect-ratio: 4 / 3; /* keeps correct proportions */
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
     </style>
 </head>
 <body>
@@ -104,10 +121,13 @@
         <h2 id="hotel-title"></h2>
         <p id="hotel-text"></p>
 
-        <iframe src="https://www.google.com/maps/d/embed?mid=1KNrDv7T6aVch5_oJGwfRQj5cGnuZEoA"
-                width="640"
-                height="480">
-        </iframe>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/d/embed?mid=1KNrDv7T6aVch5_oJGwfRQj5cGnuZEoA"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
     </section>
 
     <hr>
