@@ -5,12 +5,48 @@
     <link>http://localhost:1313/tags/computer-science---distributed/</link>
       <atom:link href="http://localhost:1313/tags/computer-science---distributed/index.xml" rel="self" type="application/rss+xml" />
     <description>Computer Science - Distributed</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu581ec2789a34ba2fd3bc7e2e4d2e72d7_24267_512x512_fill_lanczos_center_3.png</url>
       <title>Computer Science - Distributed</title>
       <link>http://localhost:1313/tags/computer-science---distributed/</link>
     </image>
+    
+    <item>
+      <title>Multi-Dimensional Autoscaling of Stream Processing Services on Edge Devices</title>
+      <link>http://localhost:1313/publication/sedlak-multi-dimensional-2025/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/sedlak-multi-dimensional-2025/</guid>
+      <description>&lt;p&gt;Add the &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; for the publication here using Markdown formatting.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Multi-dimensional Autoscaling of Processing Services: A Comparison of Agent-based Methods</title>
+      <link>http://localhost:1313/publication/sedlak-multi-dimensional-2025-1/</link>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/sedlak-multi-dimensional-2025-1/</guid>
+      <description>&lt;p&gt;Add the &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; for the publication here using Markdown formatting.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Distributed Intelligence in the Computing Continuum with Active Inference</title>
+      <link>http://localhost:1313/publication/pujol-distributed-2025/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/pujol-distributed-2025/</guid>
+      <description>&lt;p&gt;Add the &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; for the publication here using Markdown formatting.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Adaptive Active Inference Agents for Heterogeneous and Lifelong Federated Learning</title>
+      <link>http://localhost:1313/publication/danilenka-adaptive-2024/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/danilenka-adaptive-2024/</guid>
+      <description>&lt;p&gt;Add the &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; for the publication here using Markdown formatting.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Adaptive Stream Processing on Edge Devices through Active Inference</title>

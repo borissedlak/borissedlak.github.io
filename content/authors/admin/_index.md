@@ -46,8 +46,9 @@ profiles:
 interests:
   - Computing continuum systems
   - Bayesian or causal inference
+  - Service orchestration
   - Video stream processing
-  - Runtime requirements
+  - Quality of Experience
 
 education:
   - area: PhD Computer Science
