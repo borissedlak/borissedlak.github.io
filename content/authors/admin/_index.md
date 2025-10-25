@@ -24,7 +24,7 @@ role: PostDoc Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: TU Wien
+  - name: UPF Barcelona
     url: https://dsg.tuwien.ac.at/team/bsedlak/
 
 # Social network links
@@ -58,6 +58,8 @@ education:
       Working under Prof. <a href="https://dsg.tuwien.ac.at/team/sd/" target="_blank">Schahram Dustdar</a> at the Distributed Systems Group (<a href="https://dsg.tuwien.ac.at/" target="_blank">DSG</a>); focusing on ensuring runtime requirements in large-scale computing systems through causal inference. Fully funded by EU Horizon (<a href="https://www.teadal.eu/" target="_blank">Teadal</a>).
 
       Research visit at Tsinghua University under Prof. <a href="https://sites.google.com/site/profxiaoboqu/" target="_blank">Xiaobo Qu</a>; working on emerging transportation solutions for collaborative offloading in vehicular edge computing.
+      
+      Second visit at Sussex University under Prof. <a href="https://christopherlbuckley.com/" target="_blank">Chris Buckley</a>; working on agent-based intelligence in large-scale distributed computing systems.
 
   - area: MSc Software Engineering
     institution: TU Wien, Austria
@@ -185,4 +187,4 @@ awards:
 
 ## About Me
 
-Hey everyone, I'm Boris Sedlak, currently a Postdoc in the Distributed Systems Group at TU Wien, Austria, where I also received my Ph.D. and M.Sc. in Software Engineering & Internet Computing. Before getting into science, I worked for four years as a software engineer which also gave me a wider perspective. During my studies, I focused on orchestration mechanisms for Edge computing environments, or even bigger, the Computing Continuum, but always with a focus on QoS and scalability.
+Hey everyone, I'm Boris, currently a Postdoc in the Distributed Intelligence and Systems Lab (DISL) at UPF, Barcelona. Prior to that, I received my Ph.D. and M.Sc. at the TU Wien, Austria. Before getting into science, I worked for four years as a software engineer which also gave me a wider perspective. During my studies, I focused on orchestration mechanisms for Edge computing environments, or even bigger, the Computing Continuum, but always with a focus on QoS and scalability.
