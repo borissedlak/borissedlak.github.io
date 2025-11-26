@@ -44,10 +44,10 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Boris Sedlak. This work is licensed under {license}'
+    notice: '© {year} Boris Sedlak. This work and all scientific contents are licensed under {license}'
     license:
       enable: true
-      allow_derivatives: false
+      allow_derivatives: true
       share_alike: true
       allow_commercial: false
 

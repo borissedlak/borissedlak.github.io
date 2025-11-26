@@ -5,12 +5,21 @@
     <link>http://localhost:1313/event/</link>
       <atom:link href="http://localhost:1313/event/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 13 May 2025 13:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 11 Nov 2025 19:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu581ec2789a34ba2fd3bc7e2e4d2e72d7_24267_512x512_fill_lanczos_center_3.png</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>http://localhost:1313/event/</link>
     </image>
+    
+    <item>
+      <title>Operating distributed computing continuum systems through active inference</title>
+      <link>http://localhost:1313/event/tech4caceres/</link>
+      <pubDate>Tue, 11 Nov 2025 19:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/event/tech4caceres/</guid>
+      <description>&lt;p&gt;I had the opportunity to speak in the online series organized by my colleague Sergio Laso at the University of Extremadura. I talked about the latest research results from our labs at TU Wien and UPF Barcelona, where we focus on optimizing the performance of large-scale computing systems, also called Computing Continuum (CC). Our methods are centered around explainable Artificial Intelligence (AI) techniques, that create an interpretable understanding of the actions taken by any AI agent.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>PhD Defense on Autonomous Orchestration of Computing Continuum Systems through Active Inference</title>

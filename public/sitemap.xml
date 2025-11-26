@@ -2,6 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/event/tech4caceres/</loc>
+    <lastmod>2025-11-11T19:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/event/</loc>
+    <lastmod>2025-11-11T19:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>http://localhost:1313/tags/and-cluster-computing/</loc>
     <lastmod>2025-10-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -123,10 +131,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:1313/event/defense2025/</loc>
-    <lastmod>2025-05-13T13:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:1313/event/</loc>
     <lastmod>2025-05-13T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>

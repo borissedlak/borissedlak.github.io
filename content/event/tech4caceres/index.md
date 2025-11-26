@@ -3,7 +3,7 @@ title: Operating distributed computing continuum systems through active inferenc
 #draft: true
 #noindex: true
 
-published: false
+published: true
 event: University of Extremadura - Tech4Efficiency International Days
 event_url: https://aiotwin.eu/aiotwin/activities/2nd_summer_school/tutorials#
 
@@ -66,4 +66,4 @@ projects:
 #{{% /callout %}}
 ---
 
-In the lovely Dubrovnik I had the opportunity to speak on behalf of TU WIen about the ongoing research within my PhD.
+I had the opportunity to speak in the online series organized by my colleague Sergio Laso at the University of Extremadura. I talked about the latest research results from our labs at TU Wien and UPF Barcelona, where we focus on optimizing the performance of large-scale computing systems, also called Computing Continuum (CC). Our methods are centered around explainable Artificial Intelligence (AI) techniques, that create an interpretable understanding of the actions taken by any AI agent.
