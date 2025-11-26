@@ -43,7 +43,7 @@ image:
 #url_code: 'https://github.com'
 #url_pdf: ''
 url_slides: 'uploads/talks/tech4efficiency.pdf'
-#url_video: 'https://youtube.com'
+url_video: 'https://youtu.be/s_wXeTMb7rY'
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
