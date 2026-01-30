@@ -290,8 +290,6 @@
         service_outputs_cv.src = `${share}/elastic-workbench-cv-analyzer/${progress_time}.jpg`
         service_outputs_pc.src = `${share}/elastic-workbench-pc-visualizer/${progress_time}.jpg`
 
-        // TODO: Expected SLO-F in a non-changeable slider --x not directly supported
-
         const agent_cycle = 1 + Math.floor(progress_time / 10)
         console.log(agent_cycle, csv_data[(agent_cycle * 3)])
 
@@ -402,9 +400,10 @@
             const percentage = Math.min(Math.max(value, 0), max) / max * 100;
             bar.style.width = percentage + '%';
             bar.textContent = Math.round(percentage) + '%';
+            // TODO: Maybe choose a value in between green and red?
             bar.style.backgroundColor = (value >= threshold) ? 'green' : 'red';
         } else {
-            // TODO: Support fractional numbers for CPU cores
+            // TODO: Display fractional numbers for CPU cores
             const percentage = Math.min(Math.max(Math.round(value), 0), max) / max * 100;
             bar.style.width = percentage + '%';
             bar.textContent = `${Math.round(value)} / ${threshold}`;
