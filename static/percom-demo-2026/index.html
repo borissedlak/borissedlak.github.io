@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <title>Local Image Grid Slider</title>
+    <link rel="icon" type="image/png" href="favicon.svg">
+    <title>Demo (Percom 2026)</title>
     <style>
-        :root { --controls-h: 64px; /* adjust if your controls row is taller */ }
+        :root {
+            --controls-h: 64px; /* adjust if your controls row is taller */
+        }
 
         html, body {
             height: 100%;
-            margin: 0;         /* remove default margin so 100vh is exact */
-            overflow: hidden;  /* prevent page scrolling */
+            margin: 0; /* remove default margin so 100vh is exact */
+            overflow: hidden; /* prevent page scrolling */
         }
 
         body {
@@ -20,8 +22,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px;     /* use padding instead of margin */
-            height: 100vh;     /* explicit viewport height */
+            padding: 20px; /* use padding instead of margin */
+            height: 100vh; /* explicit viewport height */
         }
 
         #slider-container {
@@ -32,7 +34,6 @@
             align-items: center;
             gap: 10px;
         }
-
 
 
         #time-slider-label {
@@ -103,19 +104,21 @@
         }
 
         .skill-label {
-            width: 120px;       /* fixed width for labels */
+            width: 120px; /* fixed width for labels */
             text-align: left;
             margin-right: 10px;
-            {#font-weight: bold}
+        {
+            #font-weight: bold
+        }
         }
 
         .bold {
             font-weight: bold;
         }
 
-         .cores-wrapper {
-             margin-top: 13px;
-         }
+        .cores-wrapper {
+            margin-top: 13px;
+        }
 
         .skill-container {
             flex-grow: 1;
@@ -133,11 +136,31 @@
             transition: width 0.5s ease, background-color 0.3s ease;
         }
 
+        #loading-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            z-index: 9999;
+        }
 
+        .service-output canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
 
     </style>
 </head>
 <body>
+
+<div id="loading-overlay">
+    Demo is loading… please wait.
+</div>
 
 <div id="slider-container">
     <label for="time-slider"></label>
@@ -150,27 +173,41 @@
 <div id="time-slider-label"></div>
 
 <div id="grid">
-    <div class="service-output" id="qr-output"><img src="" alt=""></div>
-    <div class="service-output" id="cv-output"><img src="" alt=""></div>
-    <div class="service-output" id="pc-output"><img src="" alt=""></div>
+    <div class="service-output" id="qr-output">
+        <canvas></canvas>
+    </div>
+    <div class="service-output" id="cv-output">
+        <canvas></canvas>
+    </div>
+    <div class="service-output" id="pc-output">
+        <canvas></canvas>
+    </div>
 
     <div class="slo-f" id="qr-slo-f">
         <div class="skill-wrapper" id="qr-slo-f-abs">
             <span class="skill-label bold">QR SLOs:</span>
-            <div class="skill-container"><div class="skill-bar"></div></div>
+            <div class="skill-container">
+                <div class="skill-bar"></div>
+            </div>
         </div>
         <div class="skill-wrapper" id="qr-slo-f-quality">
             <span class="skill-label">= 30%  quality</span>
-            <div class="skill-container"><div class="skill-bar"></div></div>
+            <div class="skill-container">
+                <div class="skill-bar"></div>
+            </div>
         </div>
         <div class="skill-wrapper" id="qr-slo-f-tp">
             <span class="skill-label">+ 70%  rps</span>
-            <div class="skill-container"><div class="skill-bar"></div></div>
+            <div class="skill-container">
+                <div class="skill-bar"></div>
+            </div>
         </div>
         <br>
         <div class="skill-wrapper cores-wrapper" id="qr-slo-f-cores">
             <span class="skill-label">CPU Cores:</span>
-            <div class="skill-container"><div class="skill-bar"></div></div>
+            <div class="skill-container">
+                <div class="skill-bar"></div>
+            </div>
         </div>
     </div>
 
@@ -178,23 +215,33 @@
     <div class="slo-f" id="cv-slo-f">
         <div class="skill-wrapper" id="cv-slo-f-abs">
             <span class="skill-label bold">CV SLOs:</span>
-            <div class="skill-container"><div class="skill-bar"></div></div>
+            <div class="skill-container">
+                <div class="skill-bar"></div>
+            </div>
         </div>
         <div class="skill-wrapper" id="cv-slo-f-quality">
             <span class="skill-label">= 15%  quality</span>
-            <div class="skill-container"><div class="skill-bar"></div></div>
+            <div class="skill-container">
+                <div class="skill-bar"></div>
+            </div>
         </div>
         <div class="skill-wrapper" id="cv-slo-f-model">
             <span class="skill-label">+ 15%  model</span>
-            <div class="skill-container"><div class="skill-bar"></div></div>
+            <div class="skill-container">
+                <div class="skill-bar"></div>
+            </div>
         </div>
         <div class="skill-wrapper" id="cv-slo-f-tp">
             <span class="skill-label">+ 70% rps</span>
-            <div class="skill-container"><div class="skill-bar"></div></div>
+            <div class="skill-container">
+                <div class="skill-bar"></div>
+            </div>
         </div>
         <div class="skill-wrapper cores-wrapper" id="cv-slo-f-cores">
             <span class="skill-label">CPU Cores:</span>
-            <div class="skill-container"><div class="skill-bar"></div></div>
+            <div class="skill-container">
+                <div class="skill-bar"></div>
+            </div>
         </div>
     </div>
 
@@ -202,41 +249,112 @@
     <div class="slo-f" id="pc-slo-f">
         <div class="skill-wrapper" id="pc-slo-f-abs">
             <span class="skill-label bold">PC SLOs:</span>
-            <div class="skill-container"><div class="skill-bar"></div></div>
+            <div class="skill-container">
+                <div class="skill-bar"></div>
+            </div>
         </div>
         <div class="skill-wrapper" id="pc-slo-f-quality">
             <span class="skill-label">= 30%  quality</span>
-            <div class="skill-container"><div class="skill-bar"></div></div>
+            <div class="skill-container">
+                <div class="skill-bar"></div>
+            </div>
         </div>
         <div class="skill-wrapper" id="pc-slo-f-tp">
             <span class="skill-label">+ 70%  rps</span>
-            <div class="skill-container"><div class="skill-bar"></div></div>
+            <div class="skill-container">
+                <div class="skill-bar"></div>
+            </div>
         </div>
         <br>
         <div class="skill-wrapper cores-wrapper" id="pc-slo-f-cores">
             <span class="skill-label">CPU Cores:</span>
-            <div class="skill-container"><div class="skill-bar"></div></div>
+            <div class="skill-container">
+                <div class="skill-bar"></div>
+            </div>
         </div>
     </div>
 
 
-    <div class="rask-model" id="qr-rask"><img src="" alt=""></div>
-    <div class="rask-model" id="cv-rask"><img src="" alt=""></div>
-    <div class="rask-model" id="pc-rask"><img src="" alt=""></div>
+    <div class="rask-model" id="qr-rask"><canvas></canvas></div>
+    <div class="rask-model" id="cv-rask"><canvas></canvas></div>
+    <div class="rask-model" id="pc-rask"><canvas></canvas></div>
 </div>
 
 <script>
 
+    const share = "service_output";
+    const raskPath = "rask_plots/rask_plot_elastic-workbench-";
+    const serviceKeys = ["qr-detector", "cv-analyzer", "pc-visualizer"];
+
+    const frameCount = 600;
+
+    const frames = {}
+    const raskFrames = {};
+    serviceKeys.forEach(s => {
+        frames[s] = new Array(frameCount);
+        raskFrames[s] = new Array(Math.ceil(frameCount / 10) + 1);
+    });
+
+    const urls = [
+        ...serviceKeys.flatMap(service =>
+            Array.from({length: frameCount}, (_, i) => ({
+                type: 'service', service, index: i, url: `${share}/elastic-workbench-${service}/${i}.jpg`
+            }))
+        ),
+        ...serviceKeys.flatMap((service, i) =>
+            Array.from({length: Math.ceil(frameCount / 10)}, (_, cycle) => ({
+                type: 'rask', service, index: cycle, url: `${raskPath}${serviceKeys[i]}_${cycle+1}.jpg`
+            }))
+        )
+    ];
+
+    let errorImage = new Image();
+
+    async function preload() {
+        const overlay = document.getElementById("loading-overlay");
+        errorImage.src = 'error.jpg';
+        try { await errorImage.decode(); } catch (e) {}
+
+        let loaded = 0;
+        let missing_frames = 0;
+
+        const promises = urls.map(({type, service, index, url}) => {
+            const img = new Image();
+            img.src = url;
+
+            return img.decode()
+                .then(() => {
+                    // Check the type to determine which cache to use
+                    if (type === 'service') {
+                        frames[service][index] = img;
+                    } else if (type === 'rask') {
+                        raskFrames[service][index] = img;
+                    }
+                })
+                .catch(() => {
+                    missing_frames++;
+                })
+                .finally(() => {
+                    loaded++;
+                    overlay.textContent = `Demo loading… ${loaded}/${urls.length}`;
+                });
+        });
+
+        await Promise.all(promises);
+        if (missing_frames > 0) console.warn(`Missing frames: ${missing_frames}`);
+    }
+
+
+    async function init() {
+        await preload();
+        document.getElementById("loading-overlay").style.display = "none";
+    }
+
+    init();
+
+
     const slider = document.getElementById('time-slider');
     const sliderLabel = document.getElementById('time-slider-label');
-
-    const service_outputs_qr = document.getElementById('qr-output').querySelector('img');
-    const service_outputs_cv = document.getElementById('cv-output').querySelector('img');
-    const service_outputs_pc = document.getElementById('pc-output').querySelector('img');
-
-    const rask_model_qr = document.getElementById('qr-rask').querySelector('img');
-    const rask_model_cv = document.getElementById('cv-rask').querySelector('img');
-    const rask_model_pc = document.getElementById('pc-rask').querySelector('img');
 
     slider.max = 60 * 10;
 
@@ -251,9 +369,9 @@
                         results.data.forEach(r =>
                             r.state = Function('"use strict";return(' +
                                 r.state.replace(/\bNone\b/g, "null")
-                                       .replace(/\bTrue\b/g, "true")
-                                       .replace(/\bFalse\b/g, "false") +
-                            ')')()
+                                    .replace(/\bTrue\b/g, "true")
+                                    .replace(/\bFalse\b/g, "false") +
+                                ')')()
                         );
                         console.log(`CSV loaded: ${path}`, results.data);
                         resolve(results.data);
@@ -264,56 +382,72 @@
 
     let csv_data;
     loadCSV("agent_experience_EXPLORE.csv")
-    .then(data => {
-        csv_data = data;
-        return loadCSV("agent_experience_OPERATE.csv");
-    })
-    .then(data => {
-        csv_data.push(...data);
-    })
-    .then(() => {
-        loadUI(1);
-    });
-
-
-    function loadUI(progress_time) {
-        const images = document.querySelectorAll('img');
-
-        images.forEach(img => {
-            img.onerror = () => {
-                img.src = 'error.jpg';
-            };
+        .then(data => {
+            csv_data = data;
+            return loadCSV("agent_experience_OPERATE.csv");
+        })
+        .then(data => {
+            csv_data.push(...data);
+        })
+        .then(() => {
+            loadUI(1);
         });
 
-        const share = "service_output"
-        service_outputs_qr.src = `${share}/elastic-workbench-qr-detector/${progress_time}.jpg`
-        service_outputs_cv.src = `${share}/elastic-workbench-cv-analyzer/${progress_time}.jpg`
-        service_outputs_pc.src = `${share}/elastic-workbench-pc-visualizer/${progress_time}.jpg`
+    const output_canvas_qr = document.getElementById('qr-output').querySelector('canvas');
+    const output_canvas_cv = document.getElementById('cv-output').querySelector('canvas');
+    const output_canvas_pc = document.getElementById('pc-output').querySelector('canvas');
 
-        const agent_cycle = 1 + Math.floor(progress_time / 10)
-        console.log(agent_cycle, csv_data[(agent_cycle * 3)])
+    const rask_canvas_qr = document.getElementById('qr-rask').querySelector('canvas');
+    const rask_canvas_cv = document.getElementById('cv-rask').querySelector('canvas');
+    const rask_canvas_pc = document.getElementById('pc-rask').querySelector('canvas');
 
-        updateSkillBar("qr-slo-f-abs", csv_data[(agent_cycle * 3)]['slo_f'], 1, 1);
-        updateSkillBar("qr-slo-f-quality", csv_data[(agent_cycle * 3)]['state']['data_quality'], 800, 800);
-        updateSkillBar("qr-slo-f-tp", csv_data[(agent_cycle * 3)]['state']['throughput'], 80, 80);
-        updateSkillBar("qr-slo-f-cores", csv_data[(agent_cycle * 3)]['state']['cores'], 8, 8, true);
+    function loadUI(progress_time) {
+        // 1. Fixed Helper: Accepts either a Canvas element or an ID string
+        function drawToCanvas(canvas, img) {
+            const ctx = canvas.getContext('2d');
+            const displayImg = img || errorImage;
 
-        updateSkillBar("cv-slo-f-abs", csv_data[(agent_cycle * 3)+1]['slo_f'], 1, 1);
-        updateSkillBar("cv-slo-f-quality", csv_data[(agent_cycle * 3)+1]['state']['data_quality'], 288, 288);
-        updateSkillBar("cv-slo-f-tp", csv_data[(agent_cycle * 3)+1]['state']['throughput'], 5, 5);
-        updateSkillBar("cv-slo-f-model", csv_data[(agent_cycle * 3)+1]['state']['model_size'], 3, 3);
-        updateSkillBar("cv-slo-f-cores", csv_data[(agent_cycle * 3)+1]['state']['cores'], 8, 8, true);
+            if (canvas.width !== canvas.clientWidth || canvas.height !== canvas.clientHeight) {
+                canvas.width = canvas.clientWidth;
+                canvas.height = canvas.clientHeight;
+            }
+            ctx.drawImage(displayImg, 0, 0, canvas.width, canvas.height);
+        }
 
-        updateSkillBar("pc-slo-f-abs", csv_data[(agent_cycle * 3)+2]['slo_f'], 1, 1);
-        updateSkillBar("pc-slo-f-quality", csv_data[(agent_cycle * 3)+2]['state']['data_quality'], 40, 40);
-        updateSkillBar("pc-slo-f-tp", csv_data[(agent_cycle * 3)+2]['state']['throughput'], 50, 50);
-        updateSkillBar("pc-slo-f-cores", csv_data[(agent_cycle * 3)+2]['state']['cores'], 8, 8, true);
+        // 2. Execute drawing for all three services (No HTTP calls here)
+        drawToCanvas(output_canvas_qr, frames["qr-detector"][progress_time]);
+        drawToCanvas(output_canvas_cv, frames["cv-analyzer"][progress_time]);
+        drawToCanvas(output_canvas_pc, frames["pc-visualizer"][progress_time]);
 
+        // 3. Process CSV Data & Update Skill Bars
+        const agent_cycle = 1 + Math.floor(progress_time / 10);
+        const rowBase = agent_cycle * 3;
 
-        const path = "rask_plots/rask_plot_elastic-workbench-"
-        rask_model_qr.src = `${path}qr-detector_${agent_cycle}.jpg`
-        rask_model_cv.src = `${path}cv-analyzer_${agent_cycle}.jpg`
-        rask_model_pc.src = `${path}pc-visualizer_${agent_cycle}.jpg`
+        if (csv_data && csv_data[rowBase]) {
+            // QR Service
+            updateSkillBar("qr-slo-f-abs", csv_data[rowBase]['slo_f'], 1, 1);
+            updateSkillBar("qr-slo-f-quality", csv_data[rowBase]['state']['data_quality'], 800, 800);
+            updateSkillBar("qr-slo-f-tp", csv_data[rowBase]['state']['throughput'], 80, 80);
+            updateSkillBar("qr-slo-f-cores", csv_data[rowBase]['state']['cores'], 8, 8, true);
+
+            // CV Service
+            updateSkillBar("cv-slo-f-abs", csv_data[rowBase + 1]['slo_f'], 1, 1);
+            updateSkillBar("cv-slo-f-quality", csv_data[rowBase + 1]['state']['data_quality'], 288, 288);
+            updateSkillBar("cv-slo-f-tp", csv_data[rowBase + 1]['state']['throughput'], 5, 5);
+            updateSkillBar("cv-slo-f-model", csv_data[rowBase + 1]['state']['model_size'], 3, 3);
+            updateSkillBar("cv-slo-f-cores", csv_data[rowBase + 1]['state']['cores'], 8, 8, true);
+
+            // PC Service
+            updateSkillBar("pc-slo-f-abs", csv_data[rowBase + 2]['slo_f'], 1, 1);
+            updateSkillBar("pc-slo-f-quality", csv_data[rowBase + 2]['state']['data_quality'], 40, 40);
+            updateSkillBar("pc-slo-f-tp", csv_data[rowBase + 2]['state']['throughput'], 50, 50);
+            updateSkillBar("pc-slo-f-cores", csv_data[rowBase + 2]['state']['cores'], 8, 8, true);
+        }
+
+        // 4. Update RASK Plots (These still use .src as they change less frequently)
+        drawToCanvas(rask_canvas_qr, raskFrames["qr-detector"][agent_cycle]);
+        drawToCanvas(rask_canvas_cv, raskFrames["cv-analyzer"][agent_cycle]);
+        drawToCanvas(rask_canvas_pc, raskFrames["pc-visualizer"][agent_cycle]);
 
         sliderLabel.textContent = `Time in Demo ${progress_time} / ${slider.max}s`;
     }
