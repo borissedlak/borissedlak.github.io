@@ -22,14 +22,15 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px; /* use padding instead of margin */
-            height: 100vh; /* explicit viewport height */
+            padding: 20px;
+            height: 100vh; /* Lock to viewport height */
+            overflow: hidden; /* No scrolling */
         }
 
         #slider-container {
             width: 80%;
             height: var(--controls-h);
-            margin-bottom: 10px;
+            /*margin-bottom: 10px;*/
             display: flex;
             align-items: center;
             gap: 10px;
@@ -44,11 +45,14 @@
         #grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 1fr 0.45fr 1fr; /* middle row smaller */
-            gap: 5px;
-            width: 80%;
-            /* add bottom spacing of 20px */
-            height: calc(100vh - var(--controls-h) - 80px); /* 40px padding+20px extra bottom space */
+            grid-template-rows: 1fr 0.45fr 1fr;
+            gap: 16px; /* Increased gap for better visual separation */
+            width: 85%; /* Using a bit more width for resolution */
+
+            /* This is the magic part: fill remaining space */
+            flex-grow: 1;
+            min-height: 0; /* Critical for grid children to shrink/grow correctly in flex */
+            /*margin-bottom: 20px;*/
         }
 
         /* let grid cells size to the grid row height (don't force aspect-ratio) */
@@ -61,16 +65,25 @@
         }
 
         .slo-f {
-            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centers skill bars vertically in the middle row */
+            height: 100%;
         }
 
         /* ensure images fill the grid cell */
-        .service-output img,
-        .rask-model img {
+        .service-output canvas,
+        .rask-model canvas {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             display: block;
+        }
+
+        .rask-model canvas {
+            image-rendering: -webkit-optimize-contrast; /* Safari */
+            image-rendering: crisp-edges;               /* Firefox */
+            image-rendering: pixelated;                 /* Chrome/Edge */
         }
 
 
@@ -148,19 +161,13 @@
             z-index: 9999;
         }
 
-        .service-output canvas {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
-
     </style>
 </head>
 <body>
 
-<div id="loading-overlay">
-    Demo is loading… please wait.
-</div>
+<!--<div id="loading-overlay">-->
+<!--    Demo is loading… please wait.-->
+<!--</div>-->
 
 <div id="slider-container">
     <label for="time-slider"></label>
@@ -295,23 +302,39 @@
         raskFrames[s] = new Array(Math.ceil(frameCount / 10) + 1);
     });
 
-    const urls = [
-        ...serviceKeys.flatMap(service =>
-            Array.from({length: frameCount}, (_, i) => ({
-                type: 'service', service, index: i, url: `${share}/elastic-workbench-${service}/${i}.jpg`
-            }))
-        ),
-        ...serviceKeys.flatMap((service, i) =>
-            Array.from({length: Math.ceil(frameCount / 10)}, (_, cycle) => ({
-                type: 'rask', service, index: cycle, url: `${raskPath}${serviceKeys[i]}_${cycle+1}.jpg`
-            }))
-        )
-    ];
+    const urls = [];
+
+    // The rationale here is to load all of them in parallel from the start
+    for (let i = 0; i < frameCount; i++) {
+        // 1. Add Service Frames for this time step
+        serviceKeys.forEach(service => {
+            urls.push({
+                type: 'service',
+                service,
+                index: i,
+                url: `${share}/elastic-workbench-${service}/${i}.jpg`
+            });
+        });
+
+        // 2. Add RASK Plots every 10 frames
+        // This checks if i is 0, 10, 20, etc.
+        if (i % 10 === 0) {
+            const cycle = i / 10;
+            serviceKeys.forEach((service, serviceIdx) => {
+                urls.push({
+                    type: 'rask',
+                    service,
+                    index: cycle,
+                    url: `${raskPath}${serviceKeys[serviceIdx]}_${cycle + 1}.jpg`
+                });
+            });
+        }
+    }
 
     let errorImage = new Image();
 
     async function preload() {
-        const overlay = document.getElementById("loading-overlay");
+        // const overlay = document.getElementById("loading-overlay");
         errorImage.src = 'error.jpg';
         try { await errorImage.decode(); } catch (e) {}
 
@@ -336,7 +359,7 @@
                 })
                 .finally(() => {
                     loaded++;
-                    overlay.textContent = `Demo loading… ${loaded}/${urls.length}`;
+                    // overlay.textContent = `Preloading demo contents… ${loaded}/${urls.length}`;
                 });
         });
 
@@ -347,7 +370,7 @@
 
     async function init() {
         await preload();
-        document.getElementById("loading-overlay").style.display = "none";
+        // document.getElementById("loading-overlay").style.display = "none";
     }
 
     init();
@@ -404,20 +427,36 @@
     function loadUI(progress_time) {
         // 1. Fixed Helper: Accepts either a Canvas element or an ID string
         function drawToCanvas(canvas, img) {
-            const ctx = canvas.getContext('2d');
-            const displayImg = img || errorImage;
+        const ctx = canvas.getContext('2d');
+        const displayImg = img || errorImage;
 
-            if (canvas.width !== canvas.clientWidth || canvas.height !== canvas.clientHeight) {
-                canvas.width = canvas.clientWidth;
-                canvas.height = canvas.clientHeight;
-            }
-            ctx.drawImage(displayImg, 0, 0, canvas.width, canvas.height);
+        // Get the device pixel ratio (usually 2.0 for Retina/High DPI)
+        const dpr = window.devicePixelRatio || 1;
+
+        // Get the size the canvas is displayed at in the CSS grid
+        const rect = canvas.getBoundingClientRect();
+
+        // 1. Check if the internal buffer size matches the physical resolution
+        if (canvas.width !== rect.width * dpr || canvas.height !== rect.height * dpr) {
+            // Set the internal drawing surface to the high-res size
+            canvas.width = rect.width * dpr;
+            canvas.height = rect.height * dpr;
+
+            // Scale the context so your drawing commands still use "CSS pixels"
+            ctx.scale(dpr, dpr);
         }
 
+        // 2. Clear and Draw
+        // We draw using the CSS dimensions (rect.width/height)
+        // because we used ctx.scale(dpr) above.
+        ctx.clearRect(0, 0, rect.width, rect.height);
+        ctx.drawImage(displayImg, 0, 0, rect.width, rect.height);
+    }
+
         // 2. Execute drawing for all three services (No HTTP calls here)
-        drawToCanvas(output_canvas_qr, frames["qr-detector"][progress_time]);
-        drawToCanvas(output_canvas_cv, frames["cv-analyzer"][progress_time]);
-        drawToCanvas(output_canvas_pc, frames["pc-visualizer"][progress_time]);
+        drawToCanvas(output_canvas_qr, frames["qr-detector"][progress_time -1]);
+        drawToCanvas(output_canvas_cv, frames["cv-analyzer"][progress_time -1]);
+        drawToCanvas(output_canvas_pc, frames["pc-visualizer"][progress_time -1]);
 
         // 3. Process CSV Data & Update Skill Bars
         const agent_cycle = 1 + Math.floor(progress_time / 10);
@@ -428,26 +467,26 @@
             updateSkillBar("qr-slo-f-abs", csv_data[rowBase]['slo_f'], 1, 1);
             updateSkillBar("qr-slo-f-quality", csv_data[rowBase]['state']['data_quality'], 800, 800);
             updateSkillBar("qr-slo-f-tp", csv_data[rowBase]['state']['throughput'], 80, 80);
-            updateSkillBar("qr-slo-f-cores", csv_data[rowBase]['state']['cores'], 8, 8, true);
+            updateSkillBar("qr-slo-f-cores", csv_data[rowBase]['state']['cores'], 8, 8, true, true);
 
             // CV Service
             updateSkillBar("cv-slo-f-abs", csv_data[rowBase + 1]['slo_f'], 1, 1);
             updateSkillBar("cv-slo-f-quality", csv_data[rowBase + 1]['state']['data_quality'], 288, 288);
             updateSkillBar("cv-slo-f-tp", csv_data[rowBase + 1]['state']['throughput'], 5, 5);
             updateSkillBar("cv-slo-f-model", csv_data[rowBase + 1]['state']['model_size'], 3, 3);
-            updateSkillBar("cv-slo-f-cores", csv_data[rowBase + 1]['state']['cores'], 8, 8, true);
+            updateSkillBar("cv-slo-f-cores", csv_data[rowBase + 1]['state']['cores'], 8, 8, true, true);
 
             // PC Service
             updateSkillBar("pc-slo-f-abs", csv_data[rowBase + 2]['slo_f'], 1, 1);
             updateSkillBar("pc-slo-f-quality", csv_data[rowBase + 2]['state']['data_quality'], 40, 40);
             updateSkillBar("pc-slo-f-tp", csv_data[rowBase + 2]['state']['throughput'], 50, 50);
-            updateSkillBar("pc-slo-f-cores", csv_data[rowBase + 2]['state']['cores'], 8, 8, true);
+            updateSkillBar("pc-slo-f-cores", csv_data[rowBase + 2]['state']['cores'], 8, 8, true, true);
         }
 
         // 4. Update RASK Plots (These still use .src as they change less frequently)
-        drawToCanvas(rask_canvas_qr, raskFrames["qr-detector"][agent_cycle]);
-        drawToCanvas(rask_canvas_cv, raskFrames["cv-analyzer"][agent_cycle]);
-        drawToCanvas(rask_canvas_pc, raskFrames["pc-visualizer"][agent_cycle]);
+        drawToCanvas(rask_canvas_qr, raskFrames["qr-detector"][Math.min(agent_cycle -1, 59)]);
+        drawToCanvas(rask_canvas_cv, raskFrames["cv-analyzer"][Math.min(agent_cycle -1, 59)]);
+        drawToCanvas(rask_canvas_pc, raskFrames["pc-visualizer"][Math.min(agent_cycle -1, 59)]);
 
         sliderLabel.textContent = `Time in Demo ${progress_time} / ${slider.max}s`;
     }
@@ -527,21 +566,19 @@
         }
     });
 
-    function updateSkillBar(id, value, threshold, max, grey = false) {
+    function updateSkillBar(id, value, threshold, max, grey = false, frac= false) {
         const wrapper = document.getElementById(id);
         const bar = wrapper.querySelector('.skill-bar');
-        if (threshold === 1) {
+        if (threshold === 1) { // this is the SLO fulfillment
             const percentage = Math.min(Math.max(value, 0), max) / max * 100;
             bar.style.width = percentage + '%';
             bar.textContent = Math.round(percentage) + '%';
-            // TODO: Maybe choose a value in between green and red?
-            bar.style.backgroundColor = (value >= threshold) ? 'green' : 'red';
+            bar.style.backgroundColor = `hsl(${percentage * 0.9}, 100%, 20%)`;
         } else {
-            // TODO: Display fractional numbers for CPU cores
             const percentage = Math.min(Math.max(Math.round(value), 0), max) / max * 100;
             bar.style.width = percentage + '%';
-            bar.textContent = `${Math.round(value)} / ${threshold}`;
-            bar.style.backgroundColor = (Math.round(value) >= threshold) ? 'green' : 'red';
+            bar.textContent = `${frac ? value : Math.round(value)} / ${threshold}`;
+            bar.style.backgroundColor = `hsl(${percentage * 0.9}, 100%, 20%)`;
         }
         if (grey === true) {
             bar.style.backgroundColor = 'grey'
