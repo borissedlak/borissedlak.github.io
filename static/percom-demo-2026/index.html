@@ -165,9 +165,9 @@
 </head>
 <body>
 
-<!--<div id="loading-overlay">-->
-<!--    Demo is loading… please wait.-->
-<!--</div>-->
+<div id="loading-overlay">
+    Preloading demo contents...
+</div>
 
 <div id="slider-container">
     <label for="time-slider"></label>
@@ -332,9 +332,10 @@
     }
 
     let errorImage = new Image();
+    let ui_loaded = false
 
     async function preload() {
-        // const overlay = document.getElementById("loading-overlay");
+        const overlay = document.getElementById("loading-overlay");
         errorImage.src = 'error.jpg';
         try { await errorImage.decode(); } catch (e) {}
 
@@ -359,6 +360,11 @@
                 })
                 .finally(() => {
                     loaded++;
+                    if (!ui_loaded && loaded > 30) {
+                        document.getElementById("loading-overlay").style.display = "none";
+                        loadUI(1);
+                        ui_loaded = true;
+                    }
                     // overlay.textContent = `Preloading demo contents… ${loaded}/${urls.length}`;
                 });
         });
@@ -569,17 +575,18 @@
     function updateSkillBar(id, value, threshold, max, grey = false, frac= false) {
         const wrapper = document.getElementById(id);
         const bar = wrapper.querySelector('.skill-bar');
+        let percentage
         if (threshold === 1) { // this is the SLO fulfillment
-            const percentage = Math.min(Math.max(value, 0), max) / max * 100;
-            bar.style.width = percentage + '%';
+            percentage = Math.min(Math.max(value, 0), max) / max * 100;
             bar.textContent = Math.round(percentage) + '%';
             bar.style.backgroundColor = `hsl(${percentage * 0.9}, 100%, 20%)`;
         } else {
-            const percentage = Math.min(Math.max(Math.round(value), 0), max) / max * 100;
-            bar.style.width = percentage + '%';
+            percentage = Math.min(Math.max(Math.round(value), 0), max) / max * 100;
+            // value = value < 1 ? 0 : value // for rps < 0 set to 0, others are always bigger
             bar.textContent = `${frac ? value : Math.round(value)} / ${threshold}`;
             bar.style.backgroundColor = `hsl(${percentage * 0.9}, 100%, 20%)`;
         }
+        bar.style.width = Math.max(percentage, 15) + '%';
         if (grey === true) {
             bar.style.backgroundColor = 'grey'
         }

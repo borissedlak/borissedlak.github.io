@@ -27,7 +27,7 @@ rep,timestamp,service,slo_f,state,last_iteration_length
 1,2025-10-11 13:07:39.565033,elastic-workbench-cv-analyzer-1,0.3476456465904412,"{'throughput': 1.2307692307692308, 'avg_p_latency': 672.5384615384615, 'data_quality': 178.0, 'cores': 2.0, 'model_size': 3.0, 'completion_rate': 0.24615384615384617}",16
 1,2025-10-11 13:07:39.567728,elastic-workbench-pc-visualizer-1,0.82084375,"{'throughput': 50.0, 'avg_p_latency': 4.0, 'data_quality': 19.0, 'cores': 1.0, 'model_size': 1.0, 'completion_rate': 1.0}",16
 1,2025-10-11 13:07:49.568116,elastic-workbench-qr-detector-1,0.80594425,"{'throughput': 80.0, 'avg_p_latency': 10.0, 'data_quality': 356.0, 'cores': 3.0, 'completion_rate': 1.0}",16
-1,2025-10-11 13:07:49.571022,elastic-workbench-cv-analyzer-1,0.0,"{'throughput': 0.6666666666666666, 'avg_p_latency': 552.6666666666666, 'data_quality': 183.0, 'cores': 2.0, 'model_size': 3.0, 'completion_rate': 0.13333333333333333}",16
+1,2025-10-11 13:07:49.571022,elastic-workbench-cv-analyzer-1,0.0,"{'throughput': 0.366666666666666, 'avg_p_latency': 552.6666666666666, 'data_quality': 183.0, 'cores': 2.0, 'model_size': 3.0, 'completion_rate': 0.13333333333333333}",16
 1,2025-10-11 13:07:49.573855,elastic-workbench-pc-visualizer-1,1.0,"{'throughput': 50.0, 'avg_p_latency': 5.166666666666667, 'data_quality': 50.0, 'cores': 1.0, 'model_size': 1.0, 'completion_rate': 1.0}",16
 1,2025-10-11 13:07:59.562830,elastic-workbench-qr-detector-1,0.68565925,"{'throughput': 80.0, 'avg_p_latency': 2.0, 'data_quality': 116.0, 'cores': 2.0, 'completion_rate': 1.0}",23
 1,2025-10-11 13:07:59.566627,elastic-workbench-cv-analyzer-1,0.0,"{'throughput': 0.0, 'avg_p_latency': -1.0, 'data_quality': 300.0, 'cores': 1.0, 'model_size': 2.0, 'completion_rate': 0.0}",23
