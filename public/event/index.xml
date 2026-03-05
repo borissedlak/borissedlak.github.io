@@ -13,11 +13,11 @@
     </image>
     
     <item>
-      <title>From Cloud to Edge; Vision and Challenges for Service Orchestration</title>
+      <title>From Cloud to Edge: Vision and Challenges for Service Orchestration</title>
       <link>http://localhost:1313/event/fraunhofer2026/</link>
       <pubDate>Thu, 05 Mar 2026 15:00:00 +0000</pubDate>
       <guid>http://localhost:1313/event/fraunhofer2026/</guid>
-      <description>&lt;p&gt;Invited by my colleague Waldir Moreira, I had the opportunity to present a high-level overview of my research direction and&lt;/p&gt;
+      <description>&lt;p&gt;Invited by my colleague Waldir Moreira, I had the opportunity to present a high-level overview of my research direction and the inherent problems. I started off from Edge Computing, and the advantages it brings for processing sensor data, and connected to current developments in the context of Computing Continuum architectures, that try to combine the best from multiple worlds. Personally, and together with my group, we&amp;rsquo;re dedicating ourselves to coping with the heterogeneity and dynamism of these environments, while maintaining an accurate and verifiable understanding. Lastly, I wrapped up with two common challenges that I think generally impede research on services computing: the limited possibility to combine hardware from different provider, and the overhead for researchers in building realistic environments and collecting baselines for their experiments.&lt;/p&gt;
 </description>
     </item>
     
